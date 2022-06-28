@@ -178,7 +178,9 @@ resultado_suma <- sum(c(2,8,7,NA,7), na.rm = TRUE)
 ## Instalando paqueterias
 
 Las funciones previas forman parte de una paquqteria llamada *base*, una paquetería que está precargada y lista para usar en R.
+
 NOTA: Una paquetería es un conjunto de funciones, gráficos y data sets. 
+
 No obstante, hay funciones que se encuentran en otras paqueterías que no están cargadas de forma automática en R. Para instalar una paquetería podemos usar el cuadro inferior de la derecha en el apartado de Packages o con las función install.packages()
 Ambos son argumentos válidos.
 
@@ -194,4 +196,11 @@ Sí, solo debes de usar la función c(), ejem
 
 install.packages(c("dplyr","plyr","ggplot2"))
 
-## Cargando paquqeterias
+## Cargando paqueterias
+
+Una vez que instalaste la paquetería debes llamarla, esto con la función library()
+ej. library(dplyr)
+
+Nota1: esta vez, al cargar una libreria se hace sin comas. 
+
+Nota2: Cada vez que abras una sesión de R debes llamar tus librerias de trabajo
