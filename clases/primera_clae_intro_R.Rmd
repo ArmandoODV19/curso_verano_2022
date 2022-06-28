@@ -168,9 +168,30 @@ También podemos hacer esto sin necesidad de crear un objeto y eliminar los NA's
 sum(c(2,8,7,NA,7), na.rm = TRUE)
 ```
 
+Tambien podemos guardar este resultado
+
+```{r ausente4, eval=FALSE}
+resultado_suma <- sum(c(2,8,7,NA,7), na.rm = TRUE)
+```
 
 
 ## Instalando paqueterias
 
+Las funciones previas forman parte de una paquqteria llamada *base*, una paquetería que está precargada y lista para usar en R.
+NOTA: Una paquetería es un conjunto de funciones, gráficos y data sets. 
+No obstante, hay funciones que se encuentran en otras paqueterías que no están cargadas de forma automática en R. Para instalar una paquetería podemos usar el cuadro inferior de la derecha en el apartado de Packages o con las función install.packages()
+Ambos son argumentos válidos.
+
+Nota: el nombre de la paquetería va entre comillas
+
+install.packages("dplyr")
+
+install.packages("tidyverse")
+
+¿puedo instlar dos o más paqueterias a la vez?
+
+Sí, solo debes de usar la función c(), ejem
+
+install.packages(c("dplyr","plyr","ggplot2"))
 
 ## Cargando paquqeterias
