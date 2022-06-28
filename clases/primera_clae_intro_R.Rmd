@@ -119,6 +119,41 @@ Ambas líneas abrirán un apartado de ayuda con la descripción de la función
 Nota: te recomiendo realizar esto con las funciones que utilizas, para que empieces a familiarizarte con R
 
 
+R tiene funciones pre cargadas, como sum(), mean(), sd(). Las cuales nos permiten obtener la suma de un vector, la media aritmética y la desviación estándar. Antes de usarlas, veremos la seccion de ayuda con la descripcion de cada función.
+
+```{r dudas2, eval=FALSE}
+?sum
+?mean
+?sd
+```
+
+Nota: todas las funciones comparten el argumento na.rm = FALSE, el cual permite trabajar o no con argumentos faltantes. Hablaremos de esto más adelante
+
+
+
+Usaremos a vectorcito con cada una de estas funciones
+
+```{r aplicando, eval=FALSE}
+sum(vectorcito)
+mean(vectorcito)
+sd(vectorcito)
+```
+
+No obstante, también podemos colocar una función, dentro de la función. Tal vez suene redundante, pero en el ejemplo siguiente vamos a utilizar la función c(), dentro de la función sum()
+
+```{r aplicando2, eval=FALSE}
+sum(c(2,5,6,7,8))
+```
+
+
+Uno de los argumentos de nuestras funciones es na.rm = FALSE, esto significa que no eliminará valores faltantes. Vamos por un ejemplo
+
+```{r}
+vectorcito2 <- c(2,8,7,NA,7)
+sum(vectorcito2)
+```
+
+Este argumento genera un error
 
 
 ## Instalando paqueterias
