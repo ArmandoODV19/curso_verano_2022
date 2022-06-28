@@ -9,7 +9,7 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Primeros pasos
+## Primeros pasos
 
 R permite realizar operaciones aritméticas
 
@@ -65,4 +65,9 @@ Nota: "<-" se puede escribir de forma rápida usando alt + -
 respuesta <- 2 +5
 suma = 4 + 8
 ```
+
+De esta manera podemos utilizar el resultado de nuestros objetos
+Nota: el nombre de cada objeto es libre, teniendo incluso combinación entre numeros, letras, mayúsculas y minúsculas ej. "resultado1", "resultado2", "VecTor2", "VectoR"
+No obstante, nunca debe llevar espacios. Los puntos y los giones bajos te pueden servir para separar ideas ej. "SNPS_demencia_vascular", "base.datos.demencia"
+Por último, nunca asignes un objeto a un número aislado ej "2 <- 2+2", esto te generará un error.
 
