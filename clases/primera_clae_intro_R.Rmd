@@ -148,12 +148,26 @@ sum(c(2,5,6,7,8))
 
 Uno de los argumentos de nuestras funciones es na.rm = FALSE, esto significa que no eliminará valores faltantes. Vamos por un ejemplo
 
-```{r}
+```{r ausente, eval=FALSE}
 vectorcito2 <- c(2,8,7,NA,7)
 sum(vectorcito2)
 ```
 
-Este argumento genera un error
+Este argumento genera un NA como resultado. Para obtener el resultado a pesar de tener un valos vacío, utilizaremos el argumento na.rm pero lo cambiaremos a = TRUE
+
+```{r ausente2, eval=FALSE}
+sum(vectorcito2, na.rm = TRUE)
+```
+
+De esta forma estamos escribiendo que eliminemos los valores NA del vector.
+
+
+También podemos hacer esto sin necesidad de crear un objeto y eliminar los NA's, solo hay que tener cuidado con las comas para separar cada función.
+
+```{r ausente3, eval=FALSE}
+sum(c(2,8,7,NA,7), na.rm = TRUE)
+```
+
 
 
 ## Instalando paqueterias
