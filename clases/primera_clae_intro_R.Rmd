@@ -25,3 +25,14 @@ R permite realizar operaciones aritméticas
 20/5
 ```
 
+E icluso realizar comparaciones entre dos numeros
+
+```{r mayor, eval=FALSE}
+2 > 5
+10 > 2
+5 < 4
+8 < 20
+5 == 4
+5 == 2+3
+```
+
