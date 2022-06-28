@@ -107,6 +107,18 @@ Estos elementos tambien se pueden guardar en un objeto
 vectorcito <- c(2,4,6,8,7)
 ```
 
+¿Qué pasa si no sé usar una función?
+Para esto podemos usar la funcion help() o el signo de interrogación
+
+```{r dudas, eval=FALSE}
+help(c)
+?c
+```
+
+Ambas líneas abrirán un apartado de ayuda con la descripción de la función
+Nota: te recomiendo realizar esto con las funciones que utilizas, para que empieces a familiarizarte con R
+
+
 
 
 ## Instalando paqueterias
