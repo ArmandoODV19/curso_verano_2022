@@ -86,3 +86,30 @@ nuevo <- suma + respuesta
 datos_nuevos <- 4+5+suma+respuesta
 ```
 
+## Primeras funciones
+
+R permite realizar una serie de funciones de forma automática. Podemos obtener promedios, ds, varianza, etc
+
+Estas funciones vienen precargadas con el lenguaje y el visor de trabajo.
+Comenzaremos con las funciones c() y sum()
+
+La función c() permite concatenar o combianr una serie de elementos numericos o de tipo caracter.
+Nota: los elementos de tipo caracter siempre van entre comillas
+
+```{r concatenar, eval=FALSE}
+c(2,5,6,8)
+c("a", "b", "c", "d")
+```
+
+Estos elementos tambien se pueden guardar en un objeto
+
+```{r concatenar2, eval=FALSE}
+vectorcito <- c(2,4,6,8,7)
+```
+
+
+
+## Instalando paqueterias
+
+
+## Cargando paquqeterias
