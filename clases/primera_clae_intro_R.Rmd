@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 R permite realizar operaciones aritméticas
 
-```{r inicio, echo=TRUE}
+```{r inicio, eval=FALSE}
 2+2
 2+4+6+8
 5-3
