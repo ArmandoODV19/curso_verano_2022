@@ -1,7 +1,6 @@
 ---
 title: "Introducción a R"
 author: "Armando Ocampo"
-date: "28/6/2022"
 output: pdf_document
 ---
 
@@ -68,6 +67,22 @@ suma = 4 + 8
 
 De esta manera podemos utilizar el resultado de nuestros objetos
 Nota: el nombre de cada objeto es libre, teniendo incluso combinación entre numeros, letras, mayúsculas y minúsculas ej. "resultado1", "resultado2", "VecTor2", "VectoR"
-No obstante, nunca debe llevar espacios. Los puntos y los giones bajos te pueden servir para separar ideas ej. "SNPS_demencia_vascular", "base.datos.demencia"
+No obstante, nunca debe llevar espacios. Los puntos y los guiones bajos te pueden servir para separar ideas ej. "SNPS_demencia_vascular", "base.datos.demencia"
 Por último, nunca asignes un objeto a un número aislado ej "2 <- 2+2", esto te generará un error.
+
+
+Regresemos a la parte de trabajar con objetos
+
+```{r objetos2, eval=FALSE}
+respuesta + 4
+suma + respuesta
+respuesta - suma
+```
+
+Y sí, también podemos guardar este nuevo resultado
+
+```{r objetos3, eval=FALSE}
+nuevo <- suma + respuesta
+datos_nuevos <- 4+5+suma+respuesta
+```
 
