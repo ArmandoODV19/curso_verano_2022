@@ -55,4 +55,14 @@ FALSE + FALSE
 TRUE > FALSE
 ```
 
+## Guardando objetos
+
+Hasta este momento, todos nuestros resultados se han quedado en la consola. A veces, necesitamos guardar ciertos resultados para utilizarlos después. Para esto lo asignamos como un objeto que se guardará en el ambiente.
+Para guardar un objeto se utiliza "<-" o "=". Ambos funcionan de la misma forma.
+Nota: "<-" se puede escribir de forma rápida usando alt + -
+
+```{r objetos, eval=FALSE}
+respuesta <- 2 +5
+suma = 4 + 8
+```
 
