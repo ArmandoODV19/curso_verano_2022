@@ -25,7 +25,7 @@ R permite realizar operaciones aritméticas
 20/5
 ```
 
-E icluso realizar comparaciones entre números
+E icluso realizar comparaciones
 
 ```{r mayor, eval=FALSE}
 2 > 5
@@ -37,4 +37,22 @@ E icluso realizar comparaciones entre números
 10 >= 10
 8 <= 8
 ```
+
+## Primeros operadores booleanos
+
+```{r booleanos, eval=FALSE}
+TRUE
+FALSE
+```
+
+Los operadores booleanos pueden tener un valor. TRUE equivale a 1, mientras que FALSE vale 0
+
+```{r booleanos2, eval=FALSE}
+TRUE + TRUE
+1 == TRUE
+FALSE + FALSE
+0 == FALSE
+TRUE > FALSE
+```
+
 
