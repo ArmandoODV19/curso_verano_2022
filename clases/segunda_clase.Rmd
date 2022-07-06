@@ -17,7 +17,7 @@ Nota: si no saber utilizar una función, recuerda que puedes buscarla en interne
 ```{r vector, eval=FALSE}
 # vector tipo caracter
 c("a", "b", "c", "d")
-# vector numerico continuo
+# vector numerico continuo <- 
 c(1.2,1.3,1.4,1.5)
 # vector numerico entero
 c(1,2,3,4,5,6,7)
@@ -27,3 +27,10 @@ c("a", "b",1, "c",1.3,5)
 
 Nota 1: los elementos de tipo caracter van entre comillas, los vectores de tipo numerico se escriben sin comillas.
 Nota 2: puedes o no colocar un espacio entre cada elemento, el agregar un espacio no afecta el vector
+
+
+Hasta este momento nuestros vectores solo se han proyectado en la consola. Para guardarlos en el ambiente utilizamos "<-" o "=". Recuerda que el atajo para asignar es "alt" + "-". Vamos a crear un vector con numeros del 1 al 5. Llamaremos a este vector *numeros*
+```{r vector2, eval=FALSE}
+numeros <- c(1,2,3,4,5)
+```
+
