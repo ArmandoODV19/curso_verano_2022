@@ -161,4 +161,11 @@ mi_primer_df <- data.frame(nombres,edad,color,mascotas)
 mi_primer_df
 ```
 
+Al tener elementos de diferente naturaleza a veces es complicado evaluar columna por columna para saber la naturaleza de nuestras variables. En este caso te recomiendo evaluar de forma rapida tu data set con las siguientes funciones
+```{r df2, eval=FALSE}
+str(mi_primer_df)
+summary(mi_primer_df)
+```
 
+
+Al tener elementos de diferente naturaleza no podemos realizar operaciones matematicas de forma directa. Sin embargo podemos 
