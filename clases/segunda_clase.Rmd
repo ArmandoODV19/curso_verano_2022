@@ -98,7 +98,7 @@ mi_primer_matriz <- matrix(data = (1:9), nrow = 3, byrow = TRUE)
 ```
 
 Las matrices tambien pueden tener una evaluacion a partir de funciones aritméticas. Cuando sumamos una matriz con un numero, este se sumará a cada elemento de la matriz
-```{r}
+```{r matriz3, eval=FALSE}
 mi_primer_matriz + 5
 # tambien podemos hacer restas 
 mi_primer_matriz - 20
@@ -108,7 +108,7 @@ mi_primer_matriz * 50
 
 
 Al igual que los vectores, podemos seleccionar un elemento en especifico dentro de la matriz a partir del uso de corchetes []. Recordando que las matrices son elementos en dos dimensiones, necesitamos colocar dos numeros dentro de los corchetes. El primero corresponde a las filas y el segundo a las columnas. A continuacion seleccionaresmos el elemento de la fila 2 de la columna 3 del elemento mi_primer_matriz
-```{r matriz3, eval=FALSE}
+```{r matriz4, eval=FALSE}
 mi_primer_matriz[2,3]
 ```
 
