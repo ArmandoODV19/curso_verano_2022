@@ -70,10 +70,14 @@ Tambien podemos seleccionar un elemento especifico de cada vector a partir del u
 numeros[3]
 # seleccion del cuarto elemento del vector vectorcito
 vectorcito[4]
-# si queremos conocer dos elementos utilizamos la funcion concatenar c() dentro de los corchetes. Por ejemplo, seleccionaremos los elementos tres, cuatro y cinco  del vector vectorcito
+# si queremos conocer dos elementos utilizamos la funcion concatenar c() dentro de los
+# corchetes. Por ejemplo, seleccionaremos los elementos tres, cuatro y cinco  del vector
+#vectorcito
 vectorcito[c(3,4,5)]
 # e incluso podemos realizar comparaciones y saber que elemento cumple cada condicon
-# en el siguiente ejemplo conoceremos los elementos que son mayor que 8 en el vector vectorcito
+
+# en el siguiente ejemplo conoceremos los elementos que son mayor que 8 en el vector
+#vectorcito
 vectorcito > 8
 # de esta forma podemos seleccionar los elementos que cumplen la condicion
 vectorcito[c(4,5)]
@@ -113,6 +117,23 @@ mi_primer_matriz[2,3]
 ```
 
 
+De la misma forma, podemos hacer compraciones. Evaluaremos que elementos de mi_primer_matriz son mayores a 6
+```{r matriz5, eval=FALSE}
+mi_primer_matriz > 6
+# en este caso vemos que toda la fila 3 cumple con esta condicion, para seleccionar una
+#fila completa colocamos la fila en el corchete y el segundo elemnto lo dejamos en blanco
+mi_primer_matriz[3,]
+# con las columnas se hace algo similar, solo que el primer elemento se deja en blanco y el
+# segundo numero es la columna que seleccionaresmos. A continuacion seleccionaremos los 
+# elementos de la columna 2
+mi_primer_matriz[,2]
+# No obstante, tambien podemos colocar la condicion dentro de los corchetes y saber
+# los elementos que se cumple la condicion
+mi_primer_matriz[mi_primer_matriz > 6]
+# podemos hacer la condicion como queramos
+mi_primer_matriz[mi_primer_matriz == 8]
+mi_primer_matriz[mi_primer_matriz > 4]
+```
 
 
 
