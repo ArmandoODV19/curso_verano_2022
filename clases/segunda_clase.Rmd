@@ -178,7 +178,25 @@ summary(iris)
 ```
 
 
-Al tener elementos de diferente naturaleza no podemos realizar operaciones matematicas de forma directa. Sin embargo podemos 
+Al tener elementos de diferente naturaleza no podemos realizar operaciones matematicas de forma directa. Sin embargo podemos seleccionar una columna del df utilizando "$"
+```{r df4, eval=FALSE}
+# conocer los nombres de las columnas de un df
+names(mi_primer_df)
+# seleccionar la columna edad
+mi_primer_df$edad
+# multiplicar el vector de edad por 10
+mi_primer_df$edad * 10
+
+# esto se puede hacer con cualquier df
+names(iris)
+names(mtcars)
+# y seleccionar cualquier columna de la misma manera
+iris$Sepal.Length
+# o gurdar el contenido de la columna en un nuevo objeto
+vector_iris <- iris$Petal.Width
+vector_iris
+```
+
 
 
 
