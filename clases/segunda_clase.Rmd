@@ -198,7 +198,19 @@ vector_iris
 ```
 
 
+Y si tiene las mismas dimensiones puedes agregar un nuevo vector al df a partir de la funcion rbind(), el nombre viene de row bind o pegar fila
+```{r df5, eval=FALSE}
+nuevo_elemento <- c("hugo", 40, "gris", 0)
+df_modificado <- rbind(mi_primer_df, nuevo_elemento)
+```
 
+o pegar una nueva columna con la funcion cbind() de column bind o pegar columna
+```{r df6, eval=FALSE}
+# agregaremos una columna de área de estudio a df_modificado y lo nombraremos df_completo
+carrera <- c("ciencias", "biologia", "matematicas", "medicina")
+df_completo <- cbind(df_modificado, carrera)
+df_completo
+```
 
 
 
