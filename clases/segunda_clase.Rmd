@@ -133,6 +133,8 @@ mi_primer_matriz[mi_primer_matriz > 6]
 # podemos hacer la condicion como queramos
 mi_primer_matriz[mi_primer_matriz == 8]
 mi_primer_matriz[mi_primer_matriz > 4]
+# queremos obtener los elementos mayores a 4 y menores a 8
+mi_primer_matriz[mi_primer_matriz > 4 & mi_primer_matriz < 8]
 ```
 
 
