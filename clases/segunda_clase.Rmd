@@ -1,6 +1,7 @@
 ---
-title: "vectores, matrices, data frame & listas"
+title: "vectores, matrices, data frames & listas"
 author: "Armando Ocampo"
+date: "6/7/2022"
 output: pdf_document
 ---
 
@@ -50,10 +51,18 @@ Nota: las comas sirven para separar argumentos, solo debes tener cuidado que no 
 
 Los vectores numericos tambien pueden utilizarse en expresiones matemáticas. Si sumamos un numero a un vector, el numero se sumará a cada uno de los elementos del vector, generando un nuevo vector con el producto de la expresión matemática.
 
-```{r vector5, eval=FALSE}
-# sumando 5 a cada elemento del vector numeros
-numeros + 5
+```{r vector , eval=FALSE}
+# sumando 5 a cada elemnto del vector numeros
+numeros + 5 
 # restando 15 a cada elemento del vector numeros
 numeros - 15
 # multiplicando por 10
 numeros * 10
+```
+
+
+
+
+
+
+
