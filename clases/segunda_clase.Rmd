@@ -49,6 +49,7 @@ Nota: las comas sirven para separar argumentos, solo debes tener cuidado que no 
 
 
 Los vectores numericos tambien pueden utilizarse en expresiones matemáticas. Si sumamos un numero a un vector, el numero se sumará a cada uno de los elementos del vector, generando un nuevo vector con el producto de la expresión matemática.
+
 ```{r vector5, eval=FALSE}
 # sumando 5 a cada elemento del vector numeros
 numeros + 5
