@@ -212,5 +212,12 @@ df_completo <- cbind(df_modificado, carrera)
 df_completo
 ```
 
+# Listas
 
+las listas son elementos que permiten guardar objetos de diferente naturaleza incluyendo df, matrices, vectores, objetos JSON, etc. Las listas se generan con las funcion list(), dentro de la funcion se colocan los elementos que se van a guaradar en la lista
+```{r listas, eval=FALSE}
+mi_primer_lista <- list(df_completo, df_modificado, carrera, color, mascotas, mi_primer_matriz)
+mi_primer_lista
+```
 
+De esta forma podemos almacenar de forma eficiente nuestros elementos. Para seleccionar los elementos de la lista se utilizan los [] y los [[]]
