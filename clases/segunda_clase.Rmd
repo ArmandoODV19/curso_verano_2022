@@ -34,3 +34,15 @@ Hasta este momento nuestros vectores solo se han proyectado en la consola. Para 
 numeros <- c(1,2,3,4,5)
 ```
 
+Este vector con una secuencia numerica corta es fácil de realizar de forma manual, pero ¿qué sucede si nos piden realizar un vector con numeros del 1 al 100? Para esto tenemos un atajo, los dos puntos ":" permiten hacer secuencias solo necesitamos el valor minimo y el valos maximo
+```{r vector3, eval=FALSE}
+c(1:100)
+
+```
+De hecho, podemos hacer secuencias con diferente rango, seprando cada secuencia con un coma.
+```{r vector4, eval=FALSE}
+c(1:5,15:40,50:100)
+
+```
+
+Nota: las comas sirven para separar argumentos, solo debes tener cuidado que no omitas o pongas una coma extra cuando haces tu codigo.
