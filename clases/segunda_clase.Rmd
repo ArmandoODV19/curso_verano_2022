@@ -137,6 +137,16 @@ mi_primer_matriz[mi_primer_matriz > 4]
 mi_primer_matriz[mi_primer_matriz > 4 & mi_primer_matriz < 8]
 ```
 
+# Data frames
+
+
+Los data frames son elementos en dos dimensiones que pueden guardar objetos de cualquier naturaleza. Es decir, elementos numericos enteros, continuos, caracter, etc. Existen dataframes precargados en R para hacer pruebas estadísitcas, como mtcars e iris
+```{r df, eval=FALSE}
+mtcars
+?mtcars
+iris
+?iris
+```
 
 
 
