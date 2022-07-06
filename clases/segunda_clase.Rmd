@@ -167,5 +167,20 @@ str(mi_primer_df)
 summary(mi_primer_df)
 ```
 
+Esto se puede realizar con cualquier elemento, no solo con los df
+```{r df3, eval=FALSE}
+str(mi_primer_matriz)
+summary(mi_primer_matriz)
+str(color)
+summary(color)
+str(iris)
+summary(iris)
+```
+
 
 Al tener elementos de diferente naturaleza no podemos realizar operaciones matematicas de forma directa. Sin embargo podemos 
+
+
+
+
+
