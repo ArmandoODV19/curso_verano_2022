@@ -71,8 +71,17 @@ vectorcito <- numeros + 5
 # Matrices
 
 Las matrices son elementos rectangulares que almacenan informacion de un solo tipo. Para crear una matriz se necesita la funcion matrix(). Si no sabes utilizar esta funcion utiliza el comando help(matrix) o ?matrix
+```{r matriz, eval=FALSE}
+matrix(data = (1:9), nrow = 3, byrow = TRUE)
+
+matrix(data = (1:9), nrow = 3, byrow = FALSE)
+```
 
 
+Esta informacion se puede almacenar como un objeto
+```{r matriz2, eval=FALSE}
+mi_primer_matriz <- matrix(data = (1:9), nrow = 3, byrow = TRUE)
+```
 
 
 
