@@ -1,7 +1,6 @@
 ---
 title: "vectores, matrices, data frames & listas"
 author: "Armando Ocampo"
-date: "6/7/2022"
 output: pdf_document
 ---
 
@@ -81,7 +80,6 @@ vectorcito[c(4,5)]
 ```
 
 
-
 *tarea:* realiza un vector de tipo caracter con 5 nombres y guardalo con el nombre personas, re aliza un vector con numeros del 5 al 35, realiza un vector de tipo caracter con 5 animales.
 
 # Matrices
@@ -98,6 +96,9 @@ Esta informacion se puede almacenar como un objeto
 ```{r matriz2, eval=FALSE}
 mi_primer_matriz <- matrix(data = (1:9), nrow = 3, byrow = TRUE)
 ```
+
+Al igual
+
 
 
 
