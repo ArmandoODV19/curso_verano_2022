@@ -60,11 +60,16 @@ numeros - 15
 numeros * 10
 ```
 
-Este resultado solo se observa en la consola, podemos gurdarlo asignandolo a un objeto
+Este resultado solo se observa en la consola, podemos guardarlo asignandolo a un objeto
 
 ```{r vector 6, eval=FALSE}
 vectorcito <- numeros + 5 
 ```
+
+*tarea:* realiza un vector de tipo caracter con 5 nombres y guardalo con el nombre personas, re aliza un vector con numeros del 5 al 35, realiza un vector de tipo caracter con 5 animales.
+
+# Matrices
+
 
 
 
