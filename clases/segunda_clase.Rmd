@@ -70,7 +70,7 @@ vectorcito <- numeros + 5
 
 # Matrices
 
-
+Las matrices son elementos rectangulares que almacenan informacion de un solo tipo. Para crear una matriz se necesita la funcion matrix(). Si no sabes utilizar esta funcion utiliza el comando help(matrix) o ?matrix
 
 
 
