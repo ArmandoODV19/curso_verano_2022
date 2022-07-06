@@ -84,7 +84,7 @@ vectorcito[c(4,5)]
 
 # Matrices
 
-Las matrices son elementos rectangulares que almacenan informacion de un solo tipo. Para crear una matriz se necesita la funcion matrix(). Si no sabes utilizar esta funcion utiliza el comando help(matrix) o ?matrix
+Las matrices son elementos rectangulares en dos dimensiones que almacenan informacion de un solo tipo. Para crear una matriz se necesita la funcion matrix(). Si no sabes utilizar esta funcion utiliza el comando help(matrix) o ?matrix
 ```{r matriz, eval=FALSE}
 matrix(data = (1:9), nrow = 3, byrow = TRUE)
 
@@ -97,7 +97,7 @@ Esta informacion se puede almacenar como un objeto
 mi_primer_matriz <- matrix(data = (1:9), nrow = 3, byrow = TRUE)
 ```
 
-Al igual
+Al igual que los vectores, podemos seleccionar un elemento en especifico dentro de la matriz a partir del uso de corchetes []
 
 
 
