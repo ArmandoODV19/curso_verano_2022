@@ -62,9 +62,25 @@ numeros * 10
 
 Este resultado solo se observa en la consola, podemos guardarlo asignandolo a un objeto
 
-```{r vector 6, eval=FALSE}
+```{r vector6, eval=FALSE}
 vectorcito <- numeros + 5 
 ```
+
+Tambien podemos seleccionar un elemento especifico de cada vector a partir del uso de []. Para seleccionar el tercer elemento del vector numeros se realiza lo siguiente
+```{r vector7, eval=FALSE}
+numeros[3]
+# seleccion del cuarto elemento del vector vectorcito
+vectorcito[4]
+# si queremos conocer dos elementos utilizamos la funcion concatenar c() dentro de los corchetes. Por ejemplo, seleccionaremos los elementos tres, cuatro y cinco  del vector vectorcito
+vectorcito[c(3,4,5)]
+# e incluso podemos realizar comparaciones y saber que elemento cumple cada condicon
+# en el siguiente ejemplo conoceremos los elementos que son mayor que 8 en el vector vectorcito
+vectorcito > 8
+# de esta forma podemos seleccionar los elementos que cumplen la condicion
+vectorcito[c(4,5)]
+```
+
+
 
 *tarea:* realiza un vector de tipo caracter con 5 nombres y guardalo con el nombre personas, re aliza un vector con numeros del 5 al 35, realiza un vector de tipo caracter con 5 animales.
 
