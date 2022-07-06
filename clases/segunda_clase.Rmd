@@ -1,0 +1,12 @@
+---
+title: "vectores, matrices, data frame & listas"
+author: "Armando Ocampo"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Vectores
+
