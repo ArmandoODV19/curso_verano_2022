@@ -148,5 +148,17 @@ iris
 ?iris
 ```
 
+Tambien podemos construir un data frame a partir de vectores. Realizaremos tres vectores con nombres, edades, color favorito y numero de mascotas
+```{r df1, eval=FALSE}
+nombres <- c("juan", "pedro", "luis")
+edad <- c(20,35,40)
+color <- c("rojo", "azul", "verde")
+mascotas <- c(1,2,1)
+# el dataframe o df se construye con la funcion data.frame(), dentro de la funcion
+# se coloan los vectores que conformarán el df
+# nombraremos a nuestro df como mi_primer_df
+mi_primer_df <- data.frame(nombres,edad,color,mascotas)
+mi_primer_df
+```
 
 
