@@ -1,0 +1,48 @@
+---
+title: "Prueba de archivo"
+author: "Armando Ocampo"
+date: "7/7/2022"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Este es un reporte de prueba, para hacer un pdf con mi script
+
+```{r script1, eval = FALSE}
+
+c("a", "b", "c", "d")
+
+c(1.2,1.3,1.4,1.5)
+
+c(1,2,3,4,5,6,7)
+
+c("a", "b",1, "c",1.3,5)
+
+Mi_primer_matriz <- matrix(data = (1:15), nrow = 3, byrow = TRUE)
+
+matrix(data = (1:9), nrow = 3, byrow = FALSE)
+
+
+mi_primer_matriz * 100
+
+mi_primer_matriz > 8
+resultado_bueno_con_nombre_malo <-  mi_primer_matriz[mi_primer_matriz > 8]
+
+resultado_bueno_con_nombre_malo + 15
+
+vector_matriz <-  mi_primer_matriz[,5]
+vector_matriz > 11 
+vector_matriz[3] # andrea
+vector_matriz[vector_matriz > 11]
+
+# &
+mi_primer_matriz[mi_primer_matriz != 12]
+```
+
+```{r code, eval=FALSE}
+
+```
+
