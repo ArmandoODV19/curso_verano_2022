@@ -21,3 +21,7 @@ library(dplyr)
 
 dplyr pertenece a un conjunto de paqueterias llamado tidyverse, el cual nos permite manipular información. Es bueno que sepas esto, no obstante, el día de hoy solo trabajaremos con la paqueteria mencionada.
 
+Las funciones principales de dplyr son filter(), arrange(), mutate(), group_by() y summarise(). También se conocen como verbos. Además existe un elemento denominado pipe " %>%" que nos permite unir dos elementos y tabajar con ellos. 
+
+# filter()
+
