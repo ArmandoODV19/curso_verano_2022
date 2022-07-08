@@ -1,0 +1,23 @@
+---
+title: "Introducción a dplyr"
+author: "Armando Ocampo"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# dplyr
+
+dplyr es una librería que nos permite manipular datos, ordenarlos y extraer información necesaria.
+Esta paquetería no forma parte de las paqueterías base de R. Por lo que tenemos que descargarla.
+
+install.packages("dplyr")
+
+Una vez instalada, la llamaremos para comenzar a trabajar.
+
+library(dplyr)
+
+dplyr pertenece a un conjunto de paqueterias llamado tidyverse, el cual nos permite manipular información. Es bueno que sepas esto, no obstante, el día de hoy solo trabajaremos con la paqueteria mencionada.
+
