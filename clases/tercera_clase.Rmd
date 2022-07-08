@@ -25,3 +25,22 @@ Las funciones principales de dplyr son filter(), arrange(), mutate(), group_by()
 
 # filter()
 
+El primer verbo que utilizaremos se llama filter() y nos permite filtrar un conjunto de datos con una caracteristica en específico. Los ejemplos mostrados en este artículo se basaran en información de los data set *iris* y *mtcars*. Antes de comenzar, haremos un resumen de los elementos que contiene cada data set.
+
+```{r resumen, eval=FALSE}
+str(iris)
+summary(iris)
+glimpse(iris)
+
+
+str(mtcars)
+summary(mtcars)
+glimpse(mtcars)
+```
+
+Nota_ glimpse() es una función de dplyr que permite observar un resumen de la información presente en el data frame de trabajo.
+
+
+
+
+
