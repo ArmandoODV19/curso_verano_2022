@@ -41,6 +41,39 @@ glimpse(mtcars)
 Nota_ glimpse() es una función de dplyr que permite observar un resumen de la información presente en el data frame de trabajo.
 
 
+Comenzaremos a trabajar con el dataset de iris. De este data set nos quedaremos solo con las especies setosas. En este caso dentro de la función filter() se coloca el nombre de la variable y la condición a seguir.
+
+Nota 1: el nombre de la variable debe coincidir con la forma en la cual está escrito en el df.
+
+Nota 2: en caso de realizar una condición con elementos de tipo caracter, este va en comillas. Las comparaciones numéricas van sin comillas 
+
+Nota 3: el "pipe" %>% , nos permite tomar el objeto de la izquierda y ejercer un verbo o una acción en especifico. Esta última, se escribe del lado derecho.
+
+```{r filter, eval=FALSE}
+iris %>% 
+  filter(Species == "setosa")
+
+# al igual que en ejercicios previos, al correr esta parte del codigo
+# el resultado se observará en la consola. Si queremos guaradar el resultado
+# debemos asignarlo a un objeto
+
+df_setosas <- iris %>% 
+  filter(Species == "setosa")
+```
+
+
+Una de las ventajas de filter es realizar varios filtros en una sola función. A continuación filtraremos las iris de tipo setosas con longitud de sepalo mayor a 4.8. Solo debemos separar cada condición con una coma
+
+```{r filter2, eval=FALSE}
+iris %>% 
+  filter(Species == "setosa",
+         Sepal.Length > 4.8)
+```
+
+
+
+
+
 
 
 
