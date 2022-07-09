@@ -102,7 +102,12 @@ iris %>%
   filter(Species %in% c("setosa", "versicolor"))
 ```
 
+Nota: Para realizar un filtro a partir de un vector de tipo caracter se utiliza %in% en lugar de ==
 
+*TAREA* con el dataset mtcars responde lo siguiente
+1. ¿Cuántos automóviles tienen solo 4 cilindros?
+2. ¿Cuántos automóviles tienen motor con forma de V y desplazamiento mayor a 150?
+3. ¿Qué automóviles tienen 4 carburadores, 6 cilindros, transmisión manual y menos de 200 caballos de fuerza?
 
 
 
