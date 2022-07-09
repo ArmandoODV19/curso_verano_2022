@@ -266,6 +266,19 @@ iris %>%
 # previo, donde buscamos eliminar a Petal.Length del data set
 ```
 
+Y sin importar el orden, podemos usar select() con el resto de los verbos de dplyr
+
+```{r select4, eval=FALSE}
+iris %>% 
+  select(Petal.Length,Petal.Width, Species) %>% 
+  mutate(condicion = Petal.Length > 3.5 & Petal.Length < 4.8) %>% 
+  filter(condicion == TRUE) %>% 
+  arrange(desc(Petal.Width)) %>% 
+  select(-condicion)
+
+```
+
+
 
 
 
