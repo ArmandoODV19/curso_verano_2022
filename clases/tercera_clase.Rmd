@@ -110,5 +110,5 @@ Nota: Para realizar un filtro a partir de un vector de tipo caracter se utiliza 
 3. ¿Qué automóviles tienen 4 carburadores, 6 cilindros, transmisión manual y menos de 200 caballos de fuerza?
 
 
-
+# arrange()
 
