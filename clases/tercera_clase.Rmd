@@ -155,7 +155,7 @@ Como ejemplo, crearemos una variable denominada multiplicación. La cual se conf
 
 Nota 1: recuerda que cada variable de un dataset puede utilizarse como un vector independiente. Y que cada vector puede utilizarse en una función matemática.
 
-Nota 2: recuerda que para asignar un objeto en R puedes utilizar "<-" o "=". En mutate() asiganamos a la nueva variable solo con "="
+Nota 2: recuerda que para asignar un objeto en R puedes utilizar "<-" o "=". En mutate(), asiganamos a la nueva variable solo con "="
 
 ```{r mutate1, eval=FALSE}
 iris
@@ -167,5 +167,32 @@ iris %>%
 # Este resultado solo estará presente en la consola. Para guardarlo deberás
 # asignarlo a un objeto
 ```
+
+
+Como puedes ver, la expresión de la derecha corresponde a las utilizadas al comparar y trabajar con vectores. Asimismo, puedes utilizar cada variable de tu df original como un vector independiente y realizar los análisis necesarios.
+
+
+```{r mutate2, eval=FALSE}
+# restaremos el valor de longitud de pétalo con ancho de pétalo. De esta forma
+# conoceremos si el pétalo de una flor es más ancho o más largo. Esta nueva 
+# se denominará petalo
+
+iris %>% 
+  mutate(petalo = Petal.Length - Petal.Width)
+
+# podemos complicar esto un poco más. Ahora generaremos una variable compuesta
+# por TRUE y FALSE a partir de una condición. Investigaremos que tipo de iris
+# presenta una longitud de petalo entre 3.5 y 4.8. Aquellas flores que cumplan 
+# esta condición obtendrán un TRUE, caso contrario, obtendremos un FALSE
+# la nueva variable se denominará rango
+
+iris %>% 
+  mutate(rango = Petal.Length > 3.5 & Petal.Length < 4.8)
+
+
+```
+
+
+
 
 
