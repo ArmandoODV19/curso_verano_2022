@@ -70,6 +70,16 @@ iris %>%
          Sepal.Length > 4.8)
 ```
 
+Siempre que respetemos el uso de comas, podemos realizar tantos filtros como nosotros queramos. Sin correr el siguiente código. ¿Qué crees que filtraría el siguiente argumento?
+
+```{r filter3, eval=FALSE}
+iris %>% 
+  filter(Species == "virginica",
+         Petal.Length > 4.5,
+         Petal.Width < 2,
+         Sepal.Length > 6,
+         Sepal.Width < 2.8)
+```
 
 
 
