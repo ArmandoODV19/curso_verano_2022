@@ -21,7 +21,7 @@ library(dplyr)
 
 dplyr pertenece a un conjunto de paqueterias llamado tidyverse, el cual nos permite manipular información. Es bueno que sepas esto, no obstante, el día de hoy solo trabajaremos con la paqueteria mencionada.
 
-Las funciones principales de dplyr son filter(), arrange(), mutate(), group_by() y summarise(). También se conocen como verbos. Además existe un elemento denominado pipe " %>%" que nos permite unir dos elementos y tabajar con ellos. 
+Las funciones principales de dplyr son filter(), arrange(), mutate(), select(), group_by() y summarise(). También se conocen como verbos. Además existe un elemento denominado pipe " %>%" que nos permite unir dos elementos y tabajar con ellos. 
 
 # filter()
 
@@ -194,7 +194,7 @@ iris %>%
 
 Al igual que los verbos previos, podemos utilizarlos en conjunto. Seguiendo el último ejemplo, filtraremos los datos acorde a aquellos que cumplen la condición de tener una longitud de pétalo entre 3.5 y 4.8
 
-```{r mutate2, eval=FALSE}
+```{r mutate3, eval=FALSE}
 # primero generaremos la variable rango
 
 iris %>% 
@@ -209,7 +209,7 @@ iris %>%
 
 El orden de los factores no altera el producto. Podemos usar los verbos de dplyr sin una jerarquía fija. E incluso repetirlos. 
 
-```{r mutate3, eval=FALSE}
+```{r mutate4, eval=FALSE}
 iris %>% 
   filter(Species == "versicolor") %>% 
   mutate(rango = Petal.Length > 3.5 & Petal.Length < 4.8) %>% 
@@ -217,6 +217,13 @@ iris %>%
   arrange(Sepal.Length ) %>% 
   mutate(longitud_sepalo_pulgadas = Sepal.Length/2.5)
 ```
+
+
+# select()
+
+El verbo select() permite seleccionar variables en específico. Esto es útil cuando tenemos un data set con variables que no necesitamos y que solo generan un df pesado. 
+
+
 
 
 
