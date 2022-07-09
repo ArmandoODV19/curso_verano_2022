@@ -266,7 +266,7 @@ iris %>%
 # previo, donde buscamos eliminar a Petal.Length del data set
 ```
 
-Y sin importar el orden, podemos usar select() con el resto de los verbos de dplyr
+Y sin importar el orden, podemos usar select() con el resto de los verbos de dplyr. A continuación seleccionaremos las variables *Petal.Length*, *Petal.Width*, *Species*. Seleccionaremos aquellos tipos de iris con longitud de pétalo entre 3.5 y 4.8 y generaremos una nueva variable llamada *condicion*. Seleccionaremos solo los valores que cumplan con la condición, ordenaremos los datos de forma descendente acorde a *Petal.width*. Por último, eliminaremos la variable condición.
 
 ```{r select4, eval=FALSE}
 iris %>% 
@@ -278,7 +278,7 @@ iris %>%
 
 ```
 
-
+Nota: en este ejemplo generamos una variable temporal denominada condición, para determinar aquellos tipos de iris con un rango en la longitud de pétalo. No obstante, la eliminamos al no pertenecer al data set original.
 
 
 
