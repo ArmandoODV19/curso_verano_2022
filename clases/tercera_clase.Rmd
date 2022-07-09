@@ -221,7 +221,19 @@ iris %>%
 
 # select()
 
-El verbo select() permite seleccionar variables en específico. Esto es útil cuando tenemos un data set con variables que no necesitamos y que solo generan un df pesado. 
+El verbo select() permite seleccionar variables en específico. Esto es útil cuando tenemos un data set con variables que no necesitamos y que solo generan un df pesado. Para esto solo colocamos el nombre de las variables dentro de la función. En el data set iris seleccionaremos *species* y *Sepal.Width*
+
+```{r select, eval=FALSE}
+iris %>% 
+  select(Species, Sepal.Width)
+
+# para guardar este nuevo df lo asignamos a un objeto
+
+new_iris <- iris %>% 
+  select(Species, Sepal.Width)
+```
+
+
 
 
 
