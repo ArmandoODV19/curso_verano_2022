@@ -249,6 +249,22 @@ iris %>%
 # la mayoría de los caminos conducen a Roma
 ```
 
+Asimismo, si conocemos el orden de las variables podemos seleccionarlas con los dos puntos :, por ejemplo, seleccionar de la primera a la tercera variable
+
+```{r select3, eval=FALSE}
+iris %>% 
+  select(1:3)
+
+# seleccionar de la variable 1 a la variable 4
+iris %>% 
+  select(1:4)
+
+# o hacer dos selecciones, de la variable 1 a la 2 y de la variable 4 a la 5
+iris %>% 
+  select(1:2, 4:5)
+# este último ejemplo genera el mismo resultado a los generados en el apartado
+# previo, donde buscamos eliminar a Petal.Length del data set
+```
 
 
 
