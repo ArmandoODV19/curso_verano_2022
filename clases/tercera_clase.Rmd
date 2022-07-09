@@ -81,6 +81,26 @@ iris %>%
          Sepal.Width < 2.8)
 ```
 
+En los ejemplos previos realizamos comparaciones con mayor y menor que e igualdades. No obstante, ¿Cómo puedo hacer una comprativa con rangos? Por ejemplo, quiero obtener las iris versicolor con una longitud de petalo entre 3.5 y 4.8. Para este caso, realizamos comparaciones con los booleanos | OR, & AND o != NOT. Para ello colocamos la primer condición del lado izquiero el booleano en el centro y la segunda condición a la derecha.
+
+```{r filter4, eval=FALSE}
+iris %>% 
+  filter(Species == "versicolor",
+         Petal.Length > 3.5 & Petal.Length < 4.8)
+```
+
+Esta regla se debe seguir cuando utilices los booleanos. Además, hay que recordar que no hay una sola respuesta correcta en R. Como ejemplo filtraremos las especies de iris para generar un df que contenga solo setosas y virginicas a partir de diferentes códigos.
+
+```{r filter5, eval=FALSE}
+iris %>% 
+  filter(Species == "setosa" | Species == "virginica")
+
+iris %>% 
+  filter(Species != "versicolor")
+
+iris %>% 
+  filter(Species %in% c("setosa", "versicolor"))
+```
 
 
 
