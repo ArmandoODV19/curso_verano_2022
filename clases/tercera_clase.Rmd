@@ -155,7 +155,7 @@ Como ejemplo, crearemos una variable denominada multiplicación. La cual se conf
 
 Nota 1: recuerda que cada variable de un dataset puede utilizarse como un vector independiente. Y que cada vector puede utilizarse en una función matemática.
 
-Nota 2: recuerda que para asignar un objeto en R puedes utilizar "<-" o "=" Para mutate() asiganamos a la nueva variable solo con "="
+Nota 2: recuerda que para asignar un objeto en R puedes utilizar "<-" o "=". En mutate() asiganamos a la nueva variable solo con "="
 
 ```{r mutate1, eval=FALSE}
 iris
