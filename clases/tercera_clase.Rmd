@@ -112,5 +112,36 @@ Nota: Para realizar un filtro a partir de un vector de tipo caracter se utiliza 
 
 # arrange()
 
-El verbo arrange() 
+El verbo arrange() permite ordenar los datos de forma ascendente a partir de una variable.
+A continuación, ordenaremos los datos de iris a partir de la longitud de sepalo
+
+```{r arrange1, eval=FALSE}
+iris
+
+iris %>% 
+  arrange(Sepal.Length)
+```
+
+Para ordenar de forma descendente se agrega la funcion desc() dentro del verbo arrange().
+Ahora ordenaremos de forma descendente los datos de iris a partir de la longitud de pétalo
+
+```{r arrange2, eval=FALSE}
+iris
+
+iris %>% 
+  arrange(des(Petal.Length))
+```
+
+El pipe %>%  permite combinar varios verbos de dplyr. De esta forma podemos realizar varios verbos y manipular los datos acorde a lo que necesitamos. 
+
+Nota: cada verbo se separa con un pipe
+
+Vamos a filtrar los datos para obtener solo las especies versicolor y aquellas iris con longitud de pétalo entre 3.5 y 4.8. Por último, ordenaremos los datos de morma descendente a partir del ancgo del pétalo.
+
+```{r arrange3, eval=FALSE}
+iris %>% 
+  filter(Species == "versicolor",
+         Petal.Length > 3.5 & Petal.Length < 4.8) %>% 
+  arrange(desc(Petal.Width))
+```
 
