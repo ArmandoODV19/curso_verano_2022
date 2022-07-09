@@ -233,6 +233,21 @@ new_iris <- iris %>%
   select(Species, Sepal.Width)
 ```
 
+Si queremos omitir una variable podemos colocar los nombres dentro de la función select() o solo colocar el nombre de la variable que queremos omitir acompañado de un guión medio -
+En el siguiente ejemplo, tomaremos todas las variables y quitaremos *Petal.Length*
+
+```{r select2, eval=FALSE}
+# seleccionando las variables
+iris %>% 
+  select(Sepal.Length, Sepal.Width, Petal.Width, Species)
+
+# omitiendo solo petal.length
+
+iris %>% 
+  select(-Petal.Length)
+
+# la mayoría de los caminos conducen a Roma
+```
 
 
 
