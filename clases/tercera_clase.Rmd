@@ -280,6 +280,14 @@ iris %>%
 
 Nota: en este ejemplo generamos una variable temporal denominada condición, para determinar aquellos tipos de iris con un rango en la longitud de pétalo. No obstante, la eliminamos al no pertenecer al data set original.
 
+# group_by() & summarise()
+
+El verbo group_by() agrupa los datos acorde a una característica. No suele modificar el data ser original, pero indica cuantos grupos puede formar a partir de la variable de interés. En el siguiente ejemplo utilizando el data set mtcars evaluaremos cuantos grupos podemos generar a partir del numero de cilindros que contiene cada automovil.
+
+```{r group, eval=FALSE}
+mtcars %>% 
+  group_by(cyl)
+```
 
 
 
