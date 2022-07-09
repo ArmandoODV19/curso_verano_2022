@@ -150,5 +150,5 @@ Nota: los pipes también permiten separar el código en acciones individuales. P
 
 # mutate()
 
-El verbo mutate
+El verbo mutate() genera una nueva variable a partir de una expresión de nuestros datos. Este verbo toma como argumento el nombre de la nueva variable de la izquierdo y del lado derecho la expresión de interés.
 
