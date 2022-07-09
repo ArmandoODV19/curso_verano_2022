@@ -162,7 +162,10 @@ iris
  
 
 iris %>% 
-  mutate(multiplicacion = )
+  mutate(multiplicacion = Sepal.Length * 5)
+
+# Este resultado solo estará presente en la consola. Para guardarlo deberás
+# asignarlo a un objeto
 ```
 
 
