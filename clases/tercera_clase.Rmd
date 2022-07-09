@@ -153,5 +153,16 @@ Nota: los pipes también permiten separar el código en acciones individuales. P
 El verbo mutate() genera una nueva variable a partir de una expresión de nuestros datos. Este verbo toma como argumento el nombre de la nueva variable en el lado izquierdo y del lado derecho la expresión de interés.
 Como ejemplo, crearemos una variable denominada multiplicación. La cual se conformará de multiplicar la longitude sépalo por 5.
 
-Nota: recuerda que cada variable de un dataset puede utilizarse como un vector independiente. Y que cada vector puede utilizarse en una función matemática.
+Nota 1: recuerda que cada variable de un dataset puede utilizarse como un vector independiente. Y que cada vector puede utilizarse en una función matemática.
+
+Nota 2: recuerda que para asignar un objeto en R puedes utilizar "<-" o "=" Para mutate() asiganamos a la nueva variable solo con "="
+
+```{r mutate1, eval=FALSE}
+iris
+ 
+
+iris %>% 
+  mutate(multiplicacion = )
+```
+
 
