@@ -283,3 +283,5 @@ Nota: en este ejemplo generamos una variable temporal denominada condición, par
 
 
 
+
+
