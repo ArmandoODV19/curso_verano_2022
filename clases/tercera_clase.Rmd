@@ -146,3 +146,9 @@ iris %>%
 ```
 
 Nota: los pipes también permiten separar el código en acciones individuales. Puedes subrayar ciertas partes de tu código y evaluar cada paso. Esto es útil cuando hay algún error en tu script.
+
+
+# mutate()
+
+El verbo mutate
+
