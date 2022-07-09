@@ -207,6 +207,16 @@ iris %>%
   filter(rango == TRUE)
 ```
 
+El orden de los factores no altera el producto. Podemos usar los verbos de dplyr sin una jerarquía fija. E incluso repetirlos. 
+
+```{r mutate3, eval=FALSE}
+iris %>% 
+  filter(Species == "versicolor") %>% 
+  mutate(rango = Petal.Length > 3.5 & Petal.Length < 4.8) %>% 
+  filter(rango == TRUE) %>% 
+  arrange(Sepal.Length ) %>% 
+  mutate(longitud_sepalo_pulgadas = Sepal.Length/2.5)
+```
 
 
 
