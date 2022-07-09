@@ -195,7 +195,16 @@ iris %>%
 Al igual que los verbos previos, podemos utilizarlos en conjunto. Seguiendo el último ejemplo, filtraremos los datos acorde a aquellos que cumplen la condición de tener una longitud de pétalo entre 3.5 y 4.8
 
 ```{r mutate2, eval=FALSE}
+# primero generaremos la variable rango
 
+iris %>% 
+  mutate(rango = Petal.Length > 3.5 & Petal.Length < 4.8)
+
+# ahora filtraremos los datos TRUE de la variable rango
+
+iris %>% 
+  mutate(rango = Petal.Length > 3.5 & Petal.Length < 4.8) %>% 
+  filter(rango == TRUE)
 ```
 
 
