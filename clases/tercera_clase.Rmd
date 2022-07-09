@@ -112,3 +112,5 @@ Nota: Para realizar un filtro a partir de un vector de tipo caracter se utiliza 
 
 # arrange()
 
+El verbo arrange() 
+
