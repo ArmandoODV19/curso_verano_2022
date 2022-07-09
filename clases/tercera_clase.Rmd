@@ -150,5 +150,8 @@ Nota: los pipes también permiten separar el código en acciones individuales. P
 
 # mutate()
 
-El verbo mutate() genera una nueva variable a partir de una expresión de nuestros datos. Este verbo toma como argumento el nombre de la nueva variable de la izquierdo y del lado derecho la expresión de interés.
+El verbo mutate() genera una nueva variable a partir de una expresión de nuestros datos. Este verbo toma como argumento el nombre de la nueva variable en el lado izquierdo y del lado derecho la expresión de interés.
+Como ejemplo, crearemos una variable denominada multiplicación. La cual se conformará de multiplicar la longitude sépalo por 5.
+
+Nota: recuerda que cada variable de un dataset puede utilizarse como un vector independiente. Y que cada vector puede utilizarse en una función matemática.
 
