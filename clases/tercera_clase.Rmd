@@ -341,6 +341,21 @@ Con esta función podemos determinar que el 53% de los automóviles en el grupo 
 
 ## summarise()
 
-Este verbo
+Este verbo colpasa la información de una variable para realizar un análisis estadístico como sumar los valores, obtener la media aritmética, mediana, desviación estándar, etc.
+Por lo cual debe de acompañarse de otras funciones. En el siguiente ejemplo obtendremos el promedio de los valores de *Petal.Length* en el dataset de iris.
+
+```{r summarise, eval=FALSE}
+iris %>% 
+  summarise(promedio = mean(Petal.Length))
+```
+
+Para obtener el promedio de *Petal.Length* utilizamos la función mean() dentro de summarise. Y asignamos el resultado al objeto *promedio*. De esta forma solo obtenemos el resultado de la función y eliminamos el resto de las variables de iris (colapso de información)
+
+
+Nota: summarise() y summarize() reaalizan la misma función y utilizan los mismos argumentos. 
+
+
+
+
 
 
