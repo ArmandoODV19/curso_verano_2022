@@ -354,6 +354,26 @@ Para obtener el promedio de *Petal.Length* utilizamos la función mean() dentro 
 
 Nota: summarise() y summarize() reaalizan la misma función y utilizan los mismos argumentos. 
 
+Más ejemplos de summarise con *Petal.Length*
+```{r summarise2, eval=FALSE}
+# desviación estándar
+iris %>% 
+  summarise(ds = sd(Petal.Length))
+
+# mediana
+iris %>% 
+  summarise(mediana = median(Petal.Length))
+
+# varianza
+iris %>% 
+  summarise(varianza = var(Petal.Length))
+
+# suma de los valores
+iris %>% 
+  summarise(total = sum(Petal.Length))
+```
+
+
 
 
 
