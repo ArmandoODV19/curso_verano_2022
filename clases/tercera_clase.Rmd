@@ -23,7 +23,7 @@ dplyr pertenece a un conjunto de paqueterias llamado tidyverse, el cual nos perm
 
 Las funciones principales de dplyr son filter(), arrange(), mutate(), select(), group_by() y summarise(). También se conocen como verbos. Además existe un elemento denominado pipe " %>%" que nos permite unir dos elementos y tabajar con ellos. 
 
-# filter()
+## filter()
 
 El primer verbo que utilizaremos se llama filter() y nos permite filtrar un conjunto de datos con una caracteristica en específico. Los ejemplos mostrados en este artículo se basaran en información de los data set *iris* y *mtcars*. Antes de comenzar, haremos un resumen de los elementos que contiene cada data set.
 
@@ -110,7 +110,7 @@ Nota: Para realizar un filtro a partir de un vector de tipo caracter se utiliza 
 3. ¿Qué automóviles tienen 4 carburadores, 6 cilindros, transmisión manual y menos de 200 caballos de fuerza?
 
 
-# arrange()
+## arrange()
 
 El verbo arrange() permite ordenar los datos de forma ascendente a partir de una variable.
 A continuación, ordenaremos los datos de iris a partir de la longitud de sepalo
@@ -148,7 +148,7 @@ iris %>%
 Nota: los pipes también permiten separar el código en acciones individuales. Puedes subrayar ciertas partes de tu código y evaluar cada paso. Esto es útil cuando hay algún error en tu script.
 
 
-# mutate()
+## mutate()
 
 El verbo mutate() genera una nueva variable a partir de una expresión de nuestros datos. Este verbo toma como argumento el nombre de la nueva variable en el lado izquierdo y del lado derecho la expresión de interés.
 Como ejemplo, crearemos una variable denominada multiplicación. La cual se conformará de multiplicar la longitude sépalo por 5.
@@ -219,7 +219,7 @@ iris %>%
 ```
 
 
-# select()
+## select()
 
 El verbo select() permite seleccionar variables en específico. Esto es útil cuando tenemos un data set con variables que no necesitamos y que solo generan un df pesado. Para esto solo colocamos el nombre de las variables dentro de la función. En el data set iris seleccionaremos *species* y *Sepal.Width*
 
@@ -280,7 +280,7 @@ iris %>%
 
 Nota: en este ejemplo generamos una variable temporal denominada condición, para determinar aquellos tipos de iris con un rango en la longitud de pétalo. No obstante, la eliminamos al no pertenecer al data set original.
 
-# group_by() 
+## group_by() 
 
 El verbo group_by() agrupa los datos acorde a una característica. No suele modificar el data ser original, pero indica cuantos grupos puede formar a partir de la variable de interés. En el siguiente ejemplo utilizando el data set mtcars evaluaremos cuantos grupos podemos generar a partir del numero de cilindros que contiene cada automovil.
 
@@ -339,6 +339,8 @@ mtcars %>%
 Con esta función podemos determinar que el 53% de los automóviles en el grupo generado tienen 4 cilindros, motor recto y transmisión manual.
 
 
+## summarise()
 
+Este verbo
 
 
