@@ -289,6 +289,35 @@ mtcars %>%
   group_by(cyl)
 ```
 
+El data set no se modificó. Sin embargo, indica que puede agrupar los datos en 3 a partir del numero de cilindros. La función group_by() suele acompañarse de la función count() o de summarise(). En el primer caso utilizando count() podemos contar el numero de elementos que se encuentran en cada grupo. Retomaremos el ejemplo previo, agruparemos el data set mtcars acorde al numero de cilindros y después contaremos cuantos autos se encuentran en cada grupo.
+
+```{r group2, eval=FALSE}
+mtcars %>% 
+  group_by(cyl) %>% 
+  count()
+```
+
+De esta forma podemos determiar que los automóviles en el data set pertenecen a uno de los tres grupos. 4, 6 y 8 cilindros. Asimismo, observamos que 11 automóviles presentan 4 cilindros, 7 automóviles con 6 cilindros y el último conformado por 14 autos que tienen 8 cilindros.
+
+
+Los grupos se pueden hacer tan diversos como nosotros queramos. A continuación agruparemos los datos acorde a numero de cilindros, tipo de motor y transmisión
+
+```{r group3, eval=FALSE}
+mtcars %>% 
+  group_by(cyl, vs, am)
+
+# este argumento no cambia el data set, sin embargo, nos indica que hay 7 grupos
+# agregaremos la función count() para saber como se conforman los grupos
+
+mtcars %>% 
+  group_by(cyl, vs, am) %>% 
+  count()
+```
+
+
+
+
+
 
 
 
