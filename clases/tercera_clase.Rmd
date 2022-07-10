@@ -398,7 +398,7 @@ mtcars %>%
 ```
 
 
-
+*Nota: Todos las funciones de las paqueterías presentes en tidyverse se pueden combinar con el pipe %>% de dplyr*
 
 
 
