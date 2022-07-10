@@ -374,6 +374,30 @@ iris %>%
 ```
 
 
+Al igual que el resto de los verbos, summarise se puede combinar para realizar un análisis estadístico posterior a la limpieza de datos. No obstante, si utilizamos group_by() en nuestro código debemos deshacer este agrupamiento con ungroup() y colocar las variables a desagrupar. Retomaremos un ejemplo anterior y lo complementaremoss.
+
+```{r summarise3, eval=FALSE}
+mtcars %>% 
+  group_by(cyl, vs, am) %>% 
+  count() %>% 
+  filter(am == 1) %>% 
+  mutate(motor = vs == 0,
+         porcentaje = n/13)
+
+# si nuestro análisis es correcto, al sumar la variable porcentaje debemos
+# obtner un valor igual a 1
+
+mtcars %>% 
+  group_by(cyl, vs, am) %>% 
+  count() %>% 
+  filter(am == 1) %>% 
+  mutate(motor = vs == 0,
+         porcentaje = n/13) %>% 
+  ungroup(cyl, vs, am) %>% 
+  summarise(total = sum(porcentaje))
+```
+
+
 
 
 
