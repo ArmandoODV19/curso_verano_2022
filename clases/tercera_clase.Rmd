@@ -280,7 +280,7 @@ iris %>%
 
 Nota: en este ejemplo generamos una variable temporal denominada condición, para determinar aquellos tipos de iris con un rango en la longitud de pétalo. No obstante, la eliminamos al no pertenecer al data set original.
 
-# group_by() & summarise()
+# group_by() 
 
 El verbo group_by() agrupa los datos acorde a una característica. No suele modificar el data ser original, pero indica cuantos grupos puede formar a partir de la variable de interés. En el siguiente ejemplo utilizando el data set mtcars evaluaremos cuantos grupos podemos generar a partir del numero de cilindros que contiene cada automovil.
 
@@ -314,9 +314,29 @@ mtcars %>%
   count()
 ```
 
+Este df es diferente al original de *mtcars*. Sin embargo, podemos seguir utilizando los verbos de dplyr y manipular los datos. Agruparemos los datos por número de cilindros, tipo de motor y transmisión. Contaremos los datos, seleccionaremos los automóviles con transmisión manual e identificaremos a aquellos que tengan motor con forma de V a partir de una variable denominada motor que contenga TRUE o FALSE dependiendo el caso.
 
 
+```{r group4, eval=FALSE}
+mtcars %>% 
+  group_by(cyl, vs, am) %>% 
+  count() %>% 
+  filter(am == 1) %>% 
+  mutate(motor = vs == 0)
+```
 
+Una vez generados los grupos, ¿cómo obtendrías el porcentaje de automoviles que pertenece a cada grupo?
+
+```{r group5, eval=FALSE}
+mtcars %>% 
+  group_by(cyl, vs, am) %>% 
+  count() %>% 
+  filter(am == 1) %>% 
+  mutate(motor = vs == 0,
+         porcentaje = n/13)
+```
+
+Con esta función podemos determinar que el 53% de los automóviles en el grupo generado tienen 4 cilindros, motor recto y transmisión manual.
 
 
 
