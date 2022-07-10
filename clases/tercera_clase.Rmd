@@ -38,7 +38,7 @@ summary(mtcars)
 glimpse(mtcars)
 ```
 
-Nota_ glimpse() es una función de dplyr que permite observar un resumen de la información presente en el data frame de trabajo.
+Nota: glimpse() es una función de dplyr que permite observar un resumen de la información presente en el data frame de trabajo.
 
 
 Comenzaremos a trabajar con el dataset de iris. De este data set nos quedaremos solo con las especies setosas. En este caso dentro de la función filter() se coloca el nombre de la variable y la condición a seguir.
@@ -136,7 +136,7 @@ El pipe %>%  permite combinar varios verbos de dplyr. De esta forma podemos real
 
 Nota: cada verbo se separa con un pipe
 
-Vamos a filtrar los datos para obtener solo las especies versicolor y aquellas iris con longitud de pétalo entre 3.5 y 4.8. Por último, ordenaremos los datos de morma descendente a partir del ancgo del pétalo.
+Vamos a filtrar los datos para obtener solo las especies versicolor y aquellas iris con longitud de pétalo entre 3.5 y 4.8. Por último, ordenaremos los datos de forma descendente a partir del ancho del pétalo.
 
 ```{r arrange3, eval=FALSE}
 iris %>% 
@@ -175,7 +175,7 @@ Como puedes ver, la expresión de la derecha corresponde a las utilizadas al com
 ```{r mutate2, eval=FALSE}
 # restaremos el valor de longitud de pétalo con ancho de pétalo. De esta forma
 # conoceremos si el pétalo de una flor es más ancho o más largo. Esta nueva 
-# se denominará petalo
+# variable se denominará petalo
 
 iris %>% 
   mutate(petalo = Petal.Length - Petal.Width)
@@ -192,7 +192,7 @@ iris %>%
 
 ```
 
-Al igual que los verbos previos, podemos utilizarlos en conjunto. Seguiendo el último ejemplo, filtraremos los datos acorde a aquellos que cumplen la condición de tener una longitud de pétalo entre 3.5 y 4.8
+Al igual que los verbos previos, podemos utilizarlos en conjunto. Siguiendo el último ejemplo, filtraremos los datos acorde a aquellos que cumplen la condición de tener una longitud de pétalo entre 3.5 y 4.8
 
 ```{r mutate3, eval=FALSE}
 # primero generaremos la variable rango
@@ -266,7 +266,7 @@ iris %>%
 # previo, donde buscamos eliminar a Petal.Length del data set
 ```
 
-Y sin importar el orden, podemos usar select() con el resto de los verbos de dplyr. A continuación seleccionaremos las variables *Petal.Length*, *Petal.Width*, *Species*. Seleccionaremos aquellos tipos de iris con longitud de pétalo entre 3.5 y 4.8 y generaremos una nueva variable llamada *condicion*. Seleccionaremos solo los valores que cumplan con la condición, ordenaremos los datos de forma descendente acorde a *Petal.width*. Por último, eliminaremos la variable condición.
+Y sin importar el orden, podemos usar select() con el resto de los verbos de dplyr. A continuación seleccionaremos las variables *Petal.Length*, *Petal.Width*, *Species*. Identificaremos aquellos tipos de iris con longitud de pétalo entre 3.5 y 4.8 y guardaremos esta información en una nueva variable llamada *condicion*. Seleccionaremos solo los valores que cumplan con la condición (solo aquellos que contengan TRUE), ordenaremos los datos de forma descendente acorde a *Petal.width*. Por último, eliminaremos la variable condición.
 
 ```{r select4, eval=FALSE}
 iris %>% 
@@ -314,7 +314,7 @@ mtcars %>%
   count()
 ```
 
-Este df es diferente al original de *mtcars*. Sin embargo, podemos seguir utilizando los verbos de dplyr y manipular los datos. Agruparemos los datos por número de cilindros, tipo de motor y transmisión. Contaremos los datos, seleccionaremos los automóviles con transmisión manual e identificaremos a aquellos que tengan motor con forma de V a partir de una variable denominada motor que contenga TRUE o FALSE dependiendo el caso.
+Este df es diferente al original de *mtcars*. Sin embargo, podemos seguir utilizando los verbos de dplyr y manipular los datos. Agruparemos los datos por número de cilindros, tipo de motor y transmisión. Contaremos los datos, seleccionaremos los automóviles con transmisión manual e identificaremos a aquellos que tengan motor con forma de V a partir de una variable denominada *motor* que contenga TRUE o FALSE dependiendo el caso.
 
 
 ```{r group4, eval=FALSE}
@@ -341,7 +341,7 @@ Con esta función podemos determinar que el 53% de los automóviles en el grupo 
 
 ## summarise()
 
-Este verbo colpasa la información de una variable para realizar un análisis estadístico como sumar los valores, obtener la media aritmética, mediana, desviación estándar, etc.
+Este verbo colapsa la información de una variable para realizar un análisis estadístico como sumar los valores, obtener la media aritmética, mediana, desviación estándar, etc.
 Por lo cual debe de acompañarse de otras funciones. En el siguiente ejemplo obtendremos el promedio de los valores de *Petal.Length* en el dataset de iris.
 
 ```{r summarise, eval=FALSE}
@@ -349,10 +349,10 @@ iris %>%
   summarise(promedio = mean(Petal.Length))
 ```
 
-Para obtener el promedio de *Petal.Length* utilizamos la función mean() dentro de summarise. Y asignamos el resultado al objeto *promedio*. De esta forma solo obtenemos el resultado de la función y eliminamos el resto de las variables de iris (colapso de información)
+Para obtener el promedio de *Petal.Length* utilizamos la función mean() dentro de summarise. Y asignamos el resultado al objeto *promedio*. De esta forma solo obtenemos el resultado de la función y eliminamos el resto de las variables de iris (colapso de información).
 
 
-Nota: summarise() y summarize() reaalizan la misma función y utilizan los mismos argumentos. 
+Nota: summarise() y summarize() realizan la misma función y utilizan los mismos argumentos. 
 
 Más ejemplos de summarise con *Petal.Length*
 ```{r summarise2, eval=FALSE}
@@ -374,7 +374,7 @@ iris %>%
 ```
 
 
-Al igual que el resto de los verbos, summarise se puede combinar para realizar un análisis estadístico posterior a la limpieza de datos. No obstante, si utilizamos group_by() en nuestro código debemos deshacer este agrupamiento con ungroup() y colocar las variables a desagrupar. Retomaremos un ejemplo anterior y lo complementaremoss.
+Al igual que el resto de los verbos, summarise() se puede combinar para realizar un análisis estadístico posterior a la limpieza de datos. No obstante, si utilizamos group_by() en nuestro código debemos deshacer este agrupamiento con ungroup() y colocar las variables a desagrupar. Retomaremos un ejemplo anterior y lo complementaremos.
 
 ```{r summarise3, eval=FALSE}
 mtcars %>% 
