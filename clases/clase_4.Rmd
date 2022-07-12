@@ -1,0 +1,11 @@
+---
+title: "Introducción gráficos y funciones"
+author: "Armando Ocampo"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Gráficos
