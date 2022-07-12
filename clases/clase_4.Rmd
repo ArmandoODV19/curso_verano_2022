@@ -9,3 +9,11 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 # Gráficos
+
+Para esta clase utilizaremos la paquetería ggplot2. La cual forma parte del universo de tidyverse. Esta paquetería no forma parte de los paquetes base de R, por lo cual debemos descargarla.
+
+install.packages("ggplot2")
+
+Una vez descargado, llamaremos la librería para comenzar a trabajar.
+
+library(ggplot)
