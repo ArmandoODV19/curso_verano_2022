@@ -17,3 +17,4 @@ install.packages("ggplot2")
 Una vez descargado, llamaremos la librería para comenzar a trabajar.
 
 library(ggplot)
+
