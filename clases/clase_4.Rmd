@@ -23,3 +23,11 @@ Para realizar un gráfico necesitamos 3 cosas. El data set, la estética y el ti
 
 
 Realizaremos algunos gráficos con información de los data sets *iris* y *mtcars*. Para más detalles sobre los grafos puedes checar the cheat sheet para ggplot2
+
+En este primer ejemplo realizaremos un gráfico de puntos con información de *hp* y *wt* de *mtcars*. Para comenzar a hacer graficos utilizamos la función ggplot(), y colocamos los tres elementos necesarios para realizar un gráfico.
+
+```{r grafo, eval=FALSE}
+ggplot(data = mtcars, mapping = aes(x = hp, y = wt)) +
+  geom_point()
+```
+
