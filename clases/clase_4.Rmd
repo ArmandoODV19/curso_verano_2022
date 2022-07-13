@@ -358,8 +358,17 @@ funcion_grafico(x = "versicolor")
 
 Y cada elemento del codigo anterior puede ser modificado con un argumento. Por ejemplo, agregaremos un argumento para el color de los puntos.
 
-```{r}
+```{r funcion9, eval=FALSE}
+graficando_ando <- function(x,y){
+  iris %>% 
+    filter(Species == x) %>% 
+    ggplot(aes(Sepal.Length, Petal.Length)) +
+  geom_point(size = 3, color = y)
+}
 
+graficando_ando(x = "setosa", y = "forestgreen")
+graficando_ando(x = "versicolor", y = "salmon")
+graficando_ando(x = "virginica", y = "dodgerblue")
 ```
 
 
