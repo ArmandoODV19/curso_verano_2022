@@ -221,3 +221,5 @@ iris %>%
   geom_col()
 ```
 
+
+# Funciones
