@@ -18,3 +18,8 @@ Una vez descargado, llamaremos la librería para comenzar a trabajar.
 
 library(ggplot)
 
+
+Para realizar un gráfico necesitamos 3 cosas. El data set, la estética y el tipo de gráfico. El data set corresponde al conjunto de datos del cual partiremos para graficar. La estética se representa como aes() y corresponde a la información en el eje equis y ye. Asimismo, podemos agregar una tercera variable y graficarla acorde a color o tamaño.
+
+
+Realizaremos algunos gráficos con información de los data sets *iris* y *mtcars*. Para más detalles sobre los grafos puedes checar the cheat sheet para ggplot2
