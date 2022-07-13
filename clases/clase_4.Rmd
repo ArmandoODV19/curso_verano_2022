@@ -68,3 +68,10 @@ ggplot(iris, aes(x = Sepal.Length, y = Petal.Length, color = Species)) +
   geom_point()
 ```
 
+En este jemplo el color de los puntos se modifica acorde al tipo de especie de iris. Para colorear los puntos de forma general se utiliza el argumento color dentro de la función geom_point()
+
+```{r grafo6, eval=FALSE}
+ggplot(iris, aes(x = Sepal.Length, y = Petal.Length)) +
+  geom_point(color = "red")
+```
+
