@@ -272,9 +272,29 @@ mi_primer_funcion("a")
 
 ```
 
-Los argumentos de una función pueden estar definidos o no. En el ejemplo previo x no está definido. Sin embargo, podemos generar argumentos con un valor preestablecido en la función. No obstante, este argumento se puede modificar al utilizar la función
+Los argumentos de una función pueden estar definidos o no. En el ejemplo previo x no está definido. Sin embargo, podemos generar argumentos con un valor preestablecido en la función. No obstante, este argumento se puede modificar al utilizar la función. Haremos una segunda funcion con un argumento definido.
 
-```{r }
+```{r funcion4, eval=FALSE}
+mi_segunda_funcion <- function(x, y=8){
+  x + y + 5
+}
 
+# en esta funcion tenemos dos argumentos, "x" y "y". Esta funcion se puede
+# utilizar solo asignandole un valor al argumento "x"
+
+mi_segunda_funcion(x = 5)
+mi_segunda_funcion(x = 20)
+
+# esto por que el argumento "y" ya tiene un valor definido. Sin embargo, 
+# podemos modificar el valor del argumento "y", sin modificar el esqueleto
+# de la funcion
+
+mi_segunda_funcion(x = 5, y = 30)
 ```
+
+En mi_segunda_funcion() tenemos un argumento definido, el argumento "y". Y un argumento no definido, el argumento "x"
+
+
+
+
 
