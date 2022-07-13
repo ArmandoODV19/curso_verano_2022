@@ -371,6 +371,22 @@ graficando_ando(x = "versicolor", y = "salmon")
 graficando_ando(x = "virginica", y = "dodgerblue")
 ```
 
+*TAREA:* 
+
+1. Realiza una función para calcular el índice de masa corporal
+
+2. Automatiza el siguiente código para que el usuario solo mueda modificar el rango de *Petal.Length*, y nombra a esta función como funcion_tarea()
+
+```{r tarea, eval=FALSE}
+iris %>% 
+  select(Petal.Length,Petal.Width, Species) %>% 
+  mutate(condicion = Petal.Length > 3.5 & Petal.Length < 4.8) %>% 
+  filter(condicion == TRUE) %>% 
+  arrange(desc(Petal.Width)) %>% 
+  select(-condicion) %>% 
+  ggplot(aes(Petal.Length, Petal.Width, color = Species))+
+  geom_point()
+```
 
 
 
