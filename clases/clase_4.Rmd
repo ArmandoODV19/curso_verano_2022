@@ -186,4 +186,25 @@ iris %>%
   geom_col()
 ```
 
-No obstante, 
+No obstante, puedes combinar ambos argumentos y diseñar tus gráficos de forma libre
+
+```{r barras3, eval=FALSE}
+iris %>% 
+  group_by(Species) %>% 
+  count() %>% 
+  ggplot(aes(x = Species, y = n, fill = Species))+
+  geom_col(color = "red")
+```
+
+Al igual que en los apartados previos, el color puede aplicarse de forma general y no solo acorde a una variable. En este aspecto, el argumento fill = se coloca dentro de la función geom_col(). A continuación rellenaremos nuestras barras con el color *"dodgerblue"*.
+
+```{r barras4, eval=FALSE}
+iris %>% 
+  group_by(Species) %>% 
+  count() %>% 
+  ggplot(aes(x = Species, y = n))+
+  geom_col(fill = "dodgerblue")
+```
+
+
+
