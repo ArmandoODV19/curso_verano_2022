@@ -104,4 +104,23 @@ ggplot(iris, aes(x = Sepal.Length, y = Petal.Length)) +
   geom_point(alpha = 0.5)
 ```
 
-Como en la mayoría de las funciones de R, podemos combinar los argumentos *color*, *shape*, *size*, *alpha* entre las funciones aes() y geom_*()
+Como en la mayoría de las funciones de R, podemos combinar los argumentos *color*, *shape*, *size*, *alpha* entre las funciones aes() y geom_*(). No obstante, no debes poner el mismo argumento en las dos funciones en la misma linea de código.
+
+```{r grafo8, eval=FALSE}
+# coloreando acorde al tipo de specie y cambiando el tamaño
+ggplot(iris, aes(x = Sepal.Length, y = Petal.Length, color = Species)) +
+  geom_point(size = 5)
+
+# Forma de los puntos acorde a especie y color azul para todos los puntos
+ggplot(iris, aes(x = Sepal.Length, y = Petal.Length, shape = Species)) +
+  geom_point(color = "blue")
+
+# color y forma acorde a especie
+ggplot(iris, aes(x = Sepal.Length, y = Petal.Length, colour = Species, shape = Species)) +
+  geom_point()
+
+# tamaño de 4 y color verde para todos los puntos
+ggplot(iris, aes(x = Sepal.Length, y = Petal.Length)) +
+  geom_point(size = 4, color = "green")
+```
+
