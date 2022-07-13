@@ -224,4 +224,18 @@ iris %>%
 
 # Funciones
 
-Las funciones son elementos que nos permiten realizar acciones dentro del lenguaje de R
+Las funciones son elementos que nos permiten realizar acciones dentro del lenguaje de R. Cada función contiene argumentos, que le permite a la misma ejecutar cada acción. A su vez, un conjunto de funciones se almacena en librerias.
+
+Para conocer los argumentos de cada función se utiliza la función args(). A continuación observaremos los argumentos de la función mean().
+
+```{r argumentos, eval=FALSE}
+args(mean)
+```
+
+Para obtener la documentación de cada función se utiliza la función help() o el signo de interogación. En este apartado se enecuentra una descripción detallada de cada función, la definición de cada argumento y algunos ejemplos.
+
+```{r ayuda, eval=FALSE}
+help(mean)
+?mean
+```
+
