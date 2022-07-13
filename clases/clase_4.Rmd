@@ -129,6 +129,28 @@ ggplot(iris, aes(x = Sepal.Length, y = Petal.Length)) +
 
 Las funciones de las paqueterías que se encuentran en tidyverse se pueden utilizar en conjunto a la función %>% de dplyr. En este apartado utilizaremos lo aprendido en la clase de dplyr y lo combinaremos con la información de ggplot.
 
+Antes de comenzar debemos llamar a nuestra paquetería de trabajo.
+
+library(dplyr)
+
+Comenzaremos a filtrar la información de iris acorde a una longitud de sépalo entre 4.5 y 7. Con un ancho de pétalo entre 0.5 y 1.8.
+
+```{r combinando, eval=FALSE}
+iris %>% 
+  filter(Sepal.Length > 4.5 & Sepal.Length < 7,
+         Petal.Width > 0.4 & Petal.Width < 1.8)
+```
+
+Con esta información realizaremos un gráfico de puntos comparando *Sepal.Length* en el eje de las equis y *Petal.Length* en el eje ye, coloreando los puntos acorde al tipo de especie, dando un tamaño de 4 para todos los puntos y con forma 2.
+
+```{r combinando2, eval=FALSE}
+iris %>% 
+  filter(Sepal.Length > 4.5 & Sepal.Length < 7,
+         Petal.Width > 0.4 & Petal.Width < 1.8) %>% 
+  ggplot(aes(x = Sepal.Length, y = Petal.Length, color = Species)) +
+  geom_point(size = 4, shape = 2)
+```
+
 
 
 
