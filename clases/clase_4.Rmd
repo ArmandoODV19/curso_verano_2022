@@ -239,3 +239,42 @@ help(mean)
 ?mean
 ```
 
+Es probable que ya exista una función para el problema que tengas. No obstante, ¿cómo puedo realizar una función personalizada?. En este aspecto, puedes crear tu propia función, esto a partir de la función function(). Para esto checaremos el esqueleto básico de una función.
+
+```{r funcion, eval=FALSE}
+nombre_funcion <- function(arg1, arg2, argn){
+  cuerpo de la funcion
+}
+```
+
+El nombre de la función como cualquier objeto de R debe seguir ciertas reglas. No debe ser un número aislado, no debe coincidir con el nombre de una función ya establecida, ni tener espacios.
+
+El número y nombre de cada argumento es libre, siempre y cuando se respeten las reglas de escritura.
+
+La primer función que generaremos se denominará mi primer función y tendra el objetivo de tomar cualquier numero y sumarle 3.
+
+```{r funcion2, eval=FALSE}
+mi_primer_funcion <- function(x){
+  x + 3
+}
+
+mi_primer_funcion(x = 4)
+```
+
+En esta función, cada vez que le asignamos un valor al argumento x, a este se le sumarán 3 unidades. Por lo que podemos utilizarla con el número que queramos.
+
+```{r funcion3, eval=FALSE}
+mi_primer_funcion(5)
+
+mi_primer_funcion(15)
+
+mi_primer_funcion("a")
+
+```
+
+Los argumentos de una función pueden estar definidos o no. En el ejemplo previo x no está definido. Sin embargo, podemos generar argumentos con un valor preestablecido en la función. No obstante, este argumento se puede modificar al utilizar la función
+
+```{r }
+
+```
+
