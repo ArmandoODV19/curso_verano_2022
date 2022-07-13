@@ -324,6 +324,21 @@ cuarta_funcion(5)
 ```
 
 
+Dentro de la funcion puedes colocar cualquier línea de código. Y utilizar funciones ya establecidas, como los verbos de dplyr y ggplot.
+
+A continuación, realizaremos una función para filtrar los tipos de iris del df *iris*.
+
+```{r funcion7, eval=FALSE}
+filtrando <- function(x){
+  iris %>% 
+    filter(Species == x)
+}
+
+
+filtrando(x = "setosa")
+filtrando(x = "versicolor")
+filtrando(x = "virginica")
+```
 
 
 
