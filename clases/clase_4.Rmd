@@ -49,4 +49,10 @@ ggplot(mtcars, aes(wt, hp)) +
   geom_point()
 ```
 
-Los tres códigos que utilizamos generan el mismo resultado
+Los tres códigos que utilizamos generan el mismo resultado, e incluso puedes hacer una combinación entre tipo de código.
+
+```{r grafo4, eval=FALSE}
+ggplot(mtcars, aes(x = wt, y =hp)) +
+  geom_point()
+```
+
