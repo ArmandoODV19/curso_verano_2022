@@ -44,4 +44,9 @@ No obstante, hay algunos argumentos que podemos omitir. Vamos a buscar el archiv
 
 En este archivo observamos que hay un orden por default en la función. Primero van el data set, después aes() y dentro de aes() primero va el eje de las equis y luego el eje ye. Por lo que podemos respetar el orden de aparición de los elementos, sin ncesidad de utilizar algunos argumentos.
 
+```{r grafo3, eval=FALSE}
+ggplot(mtcars, aes(wt, hp)) +
+  geom_point()
+```
 
+Los tres códigos que utilizamos generan el mismo resultado
