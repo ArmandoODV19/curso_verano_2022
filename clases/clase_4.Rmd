@@ -154,4 +154,36 @@ iris %>%
 Nota: dentro de la función ggplot(), colocamos de forma directa aes(), ya que la información del data set se encuentra en la parte superior del código.
 
 
+## Gráfico de barras
 
+El gráfico de barras nos permite evaluar frecuencias o relaciones, acorde al numero de repeticiones de un elemento. Para este gráfico se utiliza la función geom_col(). Con información de *iris* realizaremos una tabla de frecuecias para determinar el numero de especies que hay de cada tipo y posteriormente realizaremos y gráfico de barras.
+
+```{r barras, eval=FALSE}
+iris %>% 
+  group_by(Species) %>% 
+  count() %>% 
+  ggplot(aes(x = Species, y = n))+
+  geom_col()
+```
+
+Nota: a pesar de que la variable *n* no existe en el data set original de *iris*, esta se genera al realizar el agrupamiento y conteo de los datos.
+
+Para agregar color a cada barra se utiliza el argumento fill = , esta es una variación. Las barras en geom_col() pueden tener un color para el borde y un color de relleno. Vamos a utilizar los argumentos fill y color para observar las diferencias.
+
+```{r barras2, eval=FALSE}
+# utilizando fill
+iris %>% 
+  group_by(Species) %>% 
+  count() %>% 
+  ggplot(aes(x = Species, y = n, fill = Species))+
+  geom_col()
+
+# utilizando color
+iris %>% 
+  group_by(Species) %>% 
+  count() %>% 
+  ggplot(aes(x = Species, y = n, color = Species))+
+  geom_col()
+```
+
+No obstante, 
