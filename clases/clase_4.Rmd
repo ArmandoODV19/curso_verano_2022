@@ -151,8 +151,7 @@ iris %>%
   geom_point(size = 4, shape = 2)
 ```
 
-
-
+Nota: dentro de la función ggplot(), colocamos de forma directa aes(), ya que la información del data set se encuentra en la parte superior del código.
 
 
 
