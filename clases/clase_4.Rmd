@@ -31,3 +31,17 @@ ggplot(data = mtcars, mapping = aes(x = hp, y = wt)) +
   geom_point()
 ```
 
+En el gráfico anterior observamos que el data set corresponde a *mtcars*, la estética o aes() nos permite graficar en el eje equis los valores de *hp* y en el eje de las y los valores de *wt*. Debido a que especificamos cada elemento, el orden de los factores no altera el producto.
+
+```{r grafo2, eval=FALSE}
+ggplot(mapping = aes(y = wt, x = hp), data = mtcars) +
+  geom_point()
+```
+
+No obstante, hay algunos argumentos que podemos omitir. Vamos a buscar el archivo de ayuda de ggplot
+
+?ggplot
+
+En este archivo observamos que hay un orden por default en la función. Primero van el data set, después aes() y dentro de aes() primero va el eje de las equis y luego el eje ye. Por lo que podemos respetar el orden de aparición de los elementos, sin ncesidad de utilizar algunos argumentos.
+
+
