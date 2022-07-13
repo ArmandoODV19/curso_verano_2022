@@ -309,6 +309,22 @@ mi_tercera_funcion(5)
 Nota: la salida de una función siempre será el último elemento de la línea de código
 
 
+Dentro de una función se pueden agregar tantos objetos como sea necesario. No existe un límite.
+
+```{r funcion6, eval=FALSE}
+cuarta_funcion <- function(x){
+  objeto1 <- x * x
+  objeto2 <- x + 5
+  objeto3 <- 20 + 8
+  
+  objeto1 + objeto2 + objeto3
+}
+
+cuarta_funcion(5)
+```
+
+
+
 
 
 
