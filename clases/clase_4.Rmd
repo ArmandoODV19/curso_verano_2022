@@ -75,3 +75,33 @@ ggplot(iris, aes(x = Sepal.Length, y = Petal.Length)) +
   geom_point(color = "red")
 ```
 
+Mota1: el color en el apartado de geom_point() se coloca entre comillas al ser un vector de tipo caracter.
+
+Nota2: el argumento color y colour se utilizan de la misma manera.
+
+Existen otros elemntos que podemos modifcar en un gráfico. En este plot de puntos se puede modificar tamaño de puntos (size), forma (shape), transparencia (alpha). Ambos argumentos e pueden utilizar en la función aes() o geom_point() dependiendo de lo que busquemos hacer.
+
+```{r grafo7, eval=FALSE}
+# modificando tamaño
+ggplot(iris, aes(x = Sepal.Length, y = Petal.Length, size = Species)) +
+  geom_point()
+
+ggplot(iris, aes(x = Sepal.Length, y = Petal.Length)) +
+  geom_point(size = 5)
+
+# modificando forma
+ggplot(iris, aes(x = Sepal.Length, y = Petal.Length, shape = Species)) +
+  geom_point()
+
+ggplot(iris, aes(x = Sepal.Length, y = Petal.Length)) +
+  geom_point(shape = 5)
+
+# modificando transparencia
+ggplot(iris, aes(x = Sepal.Length, y = Petal.Length, alpha = Species)) +
+  geom_point()
+
+ggplot(iris, aes(x = Sepal.Length, y = Petal.Length)) +
+  geom_point(alpha = 0.5)
+```
+
+Como 
