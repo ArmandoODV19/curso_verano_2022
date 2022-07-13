@@ -27,14 +27,17 @@ Realizaremos algunos gráficos con información de los data sets *iris* y *mtcar
 En este primer ejemplo realizaremos un gráfico de puntos con información de *hp* y *wt* de *mtcars*. Para comenzar a hacer graficos utilizamos la función ggplot(), y colocamos los tres elementos necesarios para realizar un gráfico.
 
 ```{r grafo, eval=FALSE}
-ggplot(data = mtcars, mapping = aes(x = hp, y = wt)) +
+ggplot(data = iris, mapping = aes(x = Sepal.Length, y = Petal.Length)) +
   geom_point()
 ```
+
+Nota: las variables van sin comillas
+
 
 En el gráfico anterior observamos que el data set corresponde a *mtcars*, la estética o aes() nos permite graficar en el eje equis los valores de *hp* y en el eje de las y los valores de *wt*. Debido a que especificamos cada elemento, el orden de los factores no altera el producto.
 
 ```{r grafo2, eval=FALSE}
-ggplot(mapping = aes(y = wt, x = hp), data = mtcars) +
+ggplot(mapping = aes(y = Petal.Length, x = Sepal.Length), data = iris) +
   geom_point()
 ```
 
@@ -45,14 +48,23 @@ No obstante, hay algunos argumentos que podemos omitir. Vamos a buscar el archiv
 En este archivo observamos que hay un orden por default en la función. Primero van el data set, después aes() y dentro de aes() primero va el eje de las equis y luego el eje ye. Por lo que podemos respetar el orden de aparición de los elementos, sin ncesidad de utilizar algunos argumentos.
 
 ```{r grafo3, eval=FALSE}
-ggplot(mtcars, aes(wt, hp)) +
+ggplot(iris, aes(Sepal.Length, Petal.Length)) +
   geom_point()
 ```
 
 Los tres códigos que utilizamos generan el mismo resultado, e incluso puedes hacer una combinación entre tipo de código.
 
 ```{r grafo4, eval=FALSE}
-ggplot(mtcars, aes(x = wt, y =hp)) +
+ggplot(iris, aes(x = Sepal.Length, y = Petal.Length)) +
+  geom_point()
+```
+
+A continuación, vamos a cambiar el color de los puntos en el gráfico. El color de los puntos se puede realizar a partir de la información de una tercer variable, o de forma manual.
+
+Como primer ejemplo, cambiaremos el color de los puntos a partir del tipo de especie. Para hacer esto, colocamos dentro de aes() la condición.
+
+```{r grafo5, eval=FALSE}
+ggplot(iris, aes(x = Sepal.Length, y = Petal.Length, color = Species)) +
   geom_point()
 ```
 
