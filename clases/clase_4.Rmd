@@ -340,6 +340,27 @@ filtrando(x = "versicolor")
 filtrando(x = "virginica")
 ```
 
+De hecho, el resultado puede ser un gráfico. En este ejemplo realizaremos una función para filtrar los datos por tipo de iris, y posteriormente hacer un gráfico de puntos con información de *Sepal.Length* en el eje equis y Petal.Length en el eje ye. Cada punto tendrá un tamaño de 3 y color rojo 
+
+```{r funcion8, eval=FALSE}
+funcion_grafico <- function(x){
+  iris %>% 
+    filter(Species == x) %>% 
+    ggplot(aes(Sepal.Length, Petal.Length)) +
+  geom_point(size = 3, color = "red")
+}
+
+
+funcion_grafico(x = "setosa")
+funcion_grafico(x = "virginica")
+funcion_grafico(x = "versicolor")
+```
+
+Y cada elemento del codigo anterior puede ser modificado con un argumento. Por ejemplo, agregaremos un argumento para el color de los puntos.
+
+```{r}
+
+```
 
 
 
