@@ -207,4 +207,17 @@ iris %>%
 ```
 
 
+Continuando con la combinación de verbos de dplyr, realizaremos una tabla de porcentajes. Filtraremos los datos iris con una longitu de sepalo entre 4.5-7 y un ancho de pétalo entre 0.4-1.8. Posteriormente, aruparemos los datos acorde al tipo de iris, contaremos cuantos elementos existen de cada grupo, obtendremos la relación y porcentaje de los datos. Por último, graficaremos la información de porcentaje con una gráfica de barras donde el color de cada barra estará dado por la especie.
+
+```{r barras5, eval=FALSE}
+iris %>% 
+  filter(Sepal.Length > 4.5 & Sepal.Length < 7,
+         Petal.Width > 0.4 & Petal.Width < 1.8) %>% 
+  group_by(Species) %>% 
+  count() %>% 
+  mutate(relacion = n/54,
+         porcentaje = relacion * 100) %>% 
+  ggplot(aes(x = Species, y = porcentaje, fill = Species)) +
+  geom_col()
+```
 
