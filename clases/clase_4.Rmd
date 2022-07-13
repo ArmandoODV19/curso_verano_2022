@@ -223,3 +223,5 @@ iris %>%
 
 
 # Funciones
+
+Las funciones son elementos que nos permiten realizar acciones dentro del lenguaje de R
