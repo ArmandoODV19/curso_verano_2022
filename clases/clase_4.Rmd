@@ -19,12 +19,12 @@ Una vez descargado, llamaremos la librería para comenzar a trabajar.
 library(ggplot)
 
 
-Para realizar un gráfico necesitamos 3 cosas. El data set, la estética y el tipo de gráfico. El data set corresponde al conjunto de datos del cual partiremos para graficar. La estética se representa como aes() y corresponde a la información en el eje equis y ye. Asimismo, podemos agregar una tercera variable y graficarla acorde a color o tamaño.
+Para realizar un gráfico necesitamos 3 cosas. El data set, la estética y el tipo de gráfico. El data set corresponde al conjunto de datos del cual partiremos para graficar. La estética se representa como aes() y corresponde a la información en el eje equis y ye. El tipo de gráfico está dado por la función geom_*(). Asimismo, podemos agregar una tercera variable y graficarla acorde a color o tamaño.
 
 
-Realizaremos algunos gráficos con información de los data sets *iris* y *mtcars*. Para más detalles sobre los grafos puedes checar the cheat sheet para ggplot2
+Realizaremos algunos gráficos con información de los data sets *iris*. Para más detalles sobre los grafos puedes checar the cheat sheet para ggplot2
 
-En este primer ejemplo realizaremos un gráfico de puntos con información de *hp* y *wt* de *mtcars*. Para comenzar a hacer graficos utilizamos la función ggplot(), y colocamos los tres elementos necesarios para realizar un gráfico.
+En este primer ejemplo realizaremos un gráfico de puntos con información de *Sepal.Length* y *Petal.Length* de *iris*. Para comenzar a hacer graficos utilizamos la función ggplot(), y colocamos los tres elementos necesarios para realizar un gráfico.
 
 ```{r grafo, eval=FALSE}
 ggplot(data = iris, mapping = aes(x = Sepal.Length, y = Petal.Length)) +
@@ -34,7 +34,7 @@ ggplot(data = iris, mapping = aes(x = Sepal.Length, y = Petal.Length)) +
 Nota: las variables van sin comillas
 
 
-En el gráfico anterior observamos que el data set corresponde a *mtcars*, la estética o aes() nos permite graficar en el eje equis los valores de *hp* y en el eje de las y los valores de *wt*. Debido a que especificamos cada elemento, el orden de los factores no altera el producto.
+En el gráfico anterior observamos que el data set corresponde a *iris*, la estética o aes() nos permite graficar en el eje equis los valores de *Sepal.Length* y en el eje de las y los valores de *Petal.length*. Debido a que especificamos cada elemento, el orden de los factores no altera el producto.
 
 ```{r grafo2, eval=FALSE}
 ggplot(mapping = aes(y = Petal.Length, x = Sepal.Length), data = iris) +
@@ -104,4 +104,4 @@ ggplot(iris, aes(x = Sepal.Length, y = Petal.Length)) +
   geom_point(alpha = 0.5)
 ```
 
-Como 
+Como en la mayoría de las funciones de R, podemos combinar los argumentos *color*, *shape*, *size*, *alpha* entre las funciones aes() y geom_*()
