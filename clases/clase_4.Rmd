@@ -124,3 +124,13 @@ ggplot(iris, aes(x = Sepal.Length, y = Petal.Length)) +
   geom_point(size = 4, color = "green")
 ```
 
+
+## ggplot2 y dplyr
+
+Las funciones de las paqueterías que se encuentran en tidyverse se pueden utilizar en conjunto a la función %>% de dplyr. En este apartado utilizaremos lo aprendido en la clase de dplyr y lo combinaremos con la información de ggplot.
+
+
+
+
+
+
