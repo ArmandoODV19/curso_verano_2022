@@ -147,3 +147,6 @@ actividades
 na.omit(actividades)
 ```
 
+Este ejemplo muestra la reducción de la información, para no perder estos datos utilizaremos recode en cada uno de las variables. Recuerda, cada variable funciona como un vector independiente.
+
+
