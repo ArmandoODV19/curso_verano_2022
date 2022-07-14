@@ -39,3 +39,20 @@ mean(not_a)
 median(not_a)
 ```
 
+El tener Na en un conjunto de datos es tan frecuente que algunas funciones tienen la opción de ignorarlos y realizar la función pertinente
+
+```{r nas3, eval=FALSE}
+?sum
+
+sum(not_a, na.rm = TRUE)
+
+mean(not_a, na.rm = TRUE)
+
+median(not_a, na.rm = TRUE)
+```
+
+
+
+
+
+
