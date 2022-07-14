@@ -410,5 +410,5 @@ plot_chevere <- ggplot(iris, aes(Sepal.Length, Petal.Length)) +
 ggThemeAssistGadget(plot_chevere)
 ```
 
-Con esta herramienta podemos modificar nuestro gráfico. Al finalizar genera los cambios necesarios en el código para graficar el plot que hemos desarrollado
+Con esta herramienta podemos modificar nuestro gráfico. Al finalizar genera los cambios necesarios en el código para graficar el plot que hemos desarrollado.
 
