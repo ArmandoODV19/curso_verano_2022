@@ -397,5 +397,18 @@ install.packages("ggThemeAssist")
 
 install.packages("esquisse")
 
+Comenzaremos con ggThemeAssist. Vamos a llamar a nuestra libreria
 
+library(ggThemeAssist)
+
+Una vez realizado esto, necesitamos colocar los tres elementos básicos para realizar un plot y nombrar este plot como objeto. A continuación utilizamos la función *ggThemeAssistGadget()* y colocamos el nombre del plot.
+
+```{r basico, eval=FALSE}
+plot_chevere <- ggplot(iris, aes(Sepal.Length, Petal.Length)) +
+  geom_point()
+
+ggThemeAssistGadget(plot_chevere)
+```
+
+Con esta herramienta podemos modificar nuestro gráfico. Al finalizar genera los cambios necesarios en el código para graficar el plot que hemos desarrollado
 
