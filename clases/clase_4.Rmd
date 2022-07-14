@@ -412,3 +412,12 @@ ggThemeAssistGadget(plot_chevere)
 
 Con esta herramienta podemos modificar nuestro gráfico. Al finalizar genera los cambios necesarios en el código para graficar el plot que hemos desarrollado.
 
+
+esquisse es un GUI (graphical user interface) que nos permite cargar el data set del ambiente o de nuestro sistema. Este ambiente gráfico permite filtrar los datos y realizar nuestro gráfico. En primer lugar llamamos a nuestra libreria y después utilizamos la función *squisser()* para utilizar la interfaz gráfica.
+
+library(esquisse)
+
+```{r basico2, eval=FALSE}
+esquisser()
+```
+
