@@ -173,3 +173,6 @@ actividades
 Con esto se limita la información perdida y podemos realizar el resto de nuestro análisis.
 
 
+## otros caracteres en el data set
+
+
