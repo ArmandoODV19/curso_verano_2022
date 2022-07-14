@@ -107,3 +107,23 @@ sd(obj1_sin_na)
 Nota: la función *na.exclude()* realiza un proceso similar para eliminar los Na del conjunto de datos. De hecho, se utiliza de forma similar. ej. *na.exclude(not_a)*
 
 
+## Recode
+
+En ocasiones no es óptimo utilizar *na.omit()* ya que podemos llegar a perder información. Para ello, se recomienda darle un valor promedio a nuestros Na y mantenerlos en el conjunto de datos, este proceso se denomina *recode* o *recodificar*.
+
+```{r reco, eval=FALSE}
+x <- vect_na
+
+# utilizamos la funcion mean para obtener el promedio de los valores del vector
+# sin los Na, y asignamos este valor a los sitios donde existan Na en los 
+# vectores
+
+x[is.na(x)] <- mean(x, na.rm = TRUE)
+# seleccionamos el numero de decimales que queremos observar
+x <- round(x, 1)
+
+# utilizamos nuestras funciones
+sum(x)
+```
+
+
