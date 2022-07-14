@@ -197,4 +197,23 @@ gsub("/", "", new_df$dias)
 
 Asimsimo, al vaciar los datos físicos en un data set no siempre se coloca el valor real de cad elemnto y se realiza un resumen de la información. Por ejemplo, al colocar el sexo en un data set en lugar de colocar "hombre", "mujer" se coloca 1 y 0. Para modificar este valor se utiliza la función revalue de la paquetería plyr.
 
+```{r otros2, eval=FALSE}
+mas_letras <- LETTERS[1:10]
+genero <- c(1,1,0,0,1,1,1,0,1,0)
+
+genro_df <- data.frame(mas_letras, genero)
+genro_df
+
+
+# convertir en factor
+genro_df$genero <- as.factor(genro_df$genero)
+# convertir en caracter
+genro_df$genero <- as.character(genro_df$genero)
+
+genro_df$genero <- plyr::revalue(genro_df$genero,
+                             c("1" = "hombre", "0" = "mujer"))
+
+```
+
+
 
