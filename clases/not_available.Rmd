@@ -127,3 +127,23 @@ sum(x)
 ```
 
 
+Este proceso suele utilizarse cuando estamos trabajando con data frames, matrices, listas o tibble. Ya que *na.omit()* elimina las filas que contienen Na. Por lo que el proceso no es selectivo. En el siguiente ejemplo realzaremos un data frame con valores Na para observar como se genera el proceso de perdida de información.
+
+```{r df, eval=FALSE}
+# haciendo un df con informacion de 10 personas
+personas <- LETTERS[1:10]
+ejercicio_semana <- c(1,1,5,2,NA,4,2,7,NA,1)
+salidas_cine <- c(1,2,2,NA,2,2,1,1,1,2)
+numeros_mascotas <- c(0,NA,NA,1,0,0,2,2,1,NA)
+cafe_dia <- c(1,2,1,3,NA,0,NA,1,2,1)
+
+actividades <- data.frame(personas, ejercicio_semana, salidas_cine, numeros_mascotas, cafe_dia)
+
+actividades
+
+# al utilizar na.omit() podemos observar la pérdida de información que ocurre 
+# en el data set
+
+na.omit(actividades)
+```
+
