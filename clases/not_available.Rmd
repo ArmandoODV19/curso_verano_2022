@@ -41,7 +41,6 @@ str(vect_na)
 ```
 
 
-
 Al utilizar funciones de estadística como *mean()*, *sum()*, *median()*, etc. Podemos encontrarnos con el problema que generan los Na
 
 ```{r nas2, eval=FALSE}
