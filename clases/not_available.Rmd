@@ -71,6 +71,22 @@ which(is.na(not_a))
 which(is.na(vect_na))
 ```
 
-Eliminarlos es fácil, esto se puede realizar a partir de la función 
+Eliminarlos es fácil, esto se puede realizar a partir de la función *na.omit()*, el cual elimina todos los Na de nuestro conjunto de datos
+
+```{r nas6, eval=FALSE}
+na.omit(not_a)
+
+# este codigo elimina los NA, para guardar el resultado lo podemos asignar a un 
+# objeto nuevo o renombrar el objeto not_a
+
+obj1_sin_na <- na.omit(not_a)
+obj1_sin_na
+
+sum(obj1_sin_na)
+mean(obj1_sin_na)
+var(obj1_sin_na)
+sd(obj1_sin_na)
+```
+
 
 
