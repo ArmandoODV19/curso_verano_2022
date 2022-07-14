@@ -149,4 +149,27 @@ na.omit(actividades)
 
 Este ejemplo muestra la reducción de la información, para no perder estos datos utilizaremos recode en cada uno de las variables. Recuerda, cada variable funciona como un vector independiente.
 
+```{r df2, eval=FALSE}
+# limpiando ejercicio a la semana
+actividades$ejercicio_semana[is.na(actividades$ejercicio_semana)] <- mean(actividades$ejercicio_semana, na.rm = TRUE)
+actividades$ejercicio_semana <- round(actividades$ejercicio_semana, 1)
+
+# limpiando salidas al cine
+actividades$salidas_cine[is.na(actividades$salidas_cine)] <- mean(actividades$salidas_cine, na.rm = TRUE)
+actividades$salidas_cine <- round(actividades$salidas_cine, 1)
+
+# limpiando numero de mascotas
+actividades$numeros_mascotas[is.na(actividades$numeros_mascotas)] <- mean(actividades$numeros_mascotas, na.rm = TRUE)
+actividades$numeros_mascotas <- round(actividades$numeros_mascotas, 1)
+
+# limpiando numero de cafés al día
+actividades$cafe_dia[is.na(actividades$cafe_dia)] <- mean(actividades$cafe_dia, na.rm = TRUE)
+actividades$cafe_dia <- round(actividades$cafe_dia, 1)
+
+actividades
+
+```
+
+Con esto se limita la información perdida y podemos realizar el resto de nuestro análisis.
+
 
