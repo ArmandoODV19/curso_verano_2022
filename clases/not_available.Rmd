@@ -1,0 +1,41 @@
+---
+title: "Manejo de Na y otros datos"
+author: "Armando Ocampo"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Not available
+
+Los Na (not available) son objetos que carecen de información dentro de nuestro data set. Esta falta de información puede ser un problema al utilizar algunas funciones. De la misma forma, existen herramientas de trabajo que nos permiten remover estos elementos o trabajar a pesar de ellos. Estos datos se pueden representar de la siguiente manera Na, NA, NAs. Algunos data sets los colocan de forma automática o pueden ser colocados por default en nuestro data set al encuntrar una celda vacía.
+
+Vamos a comenzar con algunos ejemplos con vectores completos y vectores con NAs
+
+```{r nas, eval=FALSE}
+vector_cito <- c(1:10, 20:30,51)
+vector_cito
+
+not_a <- c(1:21, NA, 22:30)
+not_a
+
+
+vect_na <- c(1:5, NA, 14:20, NA, 21:25)
+vect_na
+```
+
+Al utilizar funciones de estadística como *mean()*, *sum()*, *median()*, etc. Podemos encontrarnos con el problema que generan los Na
+
+```{r nas2, eval=FALSE}
+# sum
+sum(not_a)
+
+# mean
+mean(not_a)
+
+# median
+median(not_a)
+```
+
