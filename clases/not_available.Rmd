@@ -175,4 +175,17 @@ Con esto se limita la información perdida y podemos realizar el resto de nuestr
 
 ## otros caracteres en el data set
 
+En ocasiones, los data sets traen consigo errores generados durante el traslado de la información de forma física a virtual, así como al estar en diferentes lenguajes o sistemas operativos. No obstante, es necesario eliminarlos del data set
+
+```{r otros, eval=FALSE}
+# haremos un data set con caracteres especiales
+
+let <- LETTERS[1:7]
+dias <- c("/lunes", "/martes", "/miercoles", "/jueves", "/viernes", "/sabado", "/domingo")
+
+new_df <- data.frame(let, dias)
+new_df
+
+#
+```
 
