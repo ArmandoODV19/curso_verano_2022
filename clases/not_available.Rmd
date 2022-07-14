@@ -26,6 +26,22 @@ vect_na <- c(1:5, NA, 14:20, NA, 21:25)
 vect_na
 ```
 
+Antes de comenzar a trabajar, te recomiendo hacer un resumen de tu data set
+
+```{r resumen, eval=FALSE}
+summary(vector_cito)
+str(vector_cito)
+
+
+summary(not_a)
+str(not_a)
+
+summary(vect_na)
+str(vect_na)
+```
+
+
+
 Al utilizar funciones de estadística como *mean()*, *sum()*, *median()*, etc. Podemos encontrarnos con el problema que generan los Na
 
 ```{r nas2, eval=FALSE}
@@ -88,5 +104,7 @@ var(obj1_sin_na)
 sd(obj1_sin_na)
 ```
 
+
+Nota: la función *na.exclude()* realiza un proceso similar para eliminar los Na del conjunto de datos. De hecho, se utiliza de forma similar. ej. *na.exclude(not_a)*
 
 
