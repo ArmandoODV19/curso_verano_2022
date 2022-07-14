@@ -51,7 +51,9 @@ mean(not_a, na.rm = TRUE)
 median(not_a, na.rm = TRUE)
 ```
 
+El argumento *na.rm=*, omite los Na para realizar la función. No los elimina del conjunto de datos original
 
+## Removiendo Na
 
 
 
