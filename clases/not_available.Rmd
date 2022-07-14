@@ -65,6 +65,11 @@ is.na(vect_na)
 
 En conjunto con which() podemos conocer la posición en la que se encuentra cada Na
 
+```{r nas5, eval=FALSE}
+which(is.na(not_a))
+
+which(is.na(vect_na))
+```
 
 
 
