@@ -55,6 +55,17 @@ El argumento *na.rm=*, omite los Na para realizar la función. No los elimina de
 
 ## Removiendo Na
 
+No obstante, en algunas ocasiones es preferible determinar el numero de NAs que se presentan en un data set y eliminarlos. Para conocer si nuestros datos presentan NA se utiliza la función *is.na()*
+
+```{r nas4, eval=FALSE}
+is.na(not_a)
+
+is.na(vect_na)
+```
+
+En conjunto con which() podemos conocer la posición en la que se encuentra cada Na
+
+
 
 
 
