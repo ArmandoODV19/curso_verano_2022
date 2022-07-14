@@ -186,6 +186,10 @@ dias <- c("/lunes", "/martes", "/miercoles", "/jueves", "/viernes", "/sabado", "
 new_df <- data.frame(let, dias)
 new_df
 
-#
+# para sustituir el elemnto "/" utilizamos la función gsub(). El primer 
+# elemento es el patron a eliminar, el segundo argumento es el reemplazo
+# por último colocamos el vector a modificar
+
+gsub("/", "", new_df$dias)
 ```
 
