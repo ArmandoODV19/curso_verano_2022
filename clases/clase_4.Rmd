@@ -388,6 +388,14 @@ iris %>%
   geom_point()
 ```
 
+# Graficar sin código
+
+Existen dos paqueterias que nos permiten graficar sin necesidad de conocer sobre código de programación estas son **ggThemeAssist** y **esquisse**. Estas paqueterias no pertenecen a las funciones base de R por lo que debemos descargarlas.
+
+
+install.packages("ggThemeAssist")
+
+install.packages("esquisse")
 
 
 
