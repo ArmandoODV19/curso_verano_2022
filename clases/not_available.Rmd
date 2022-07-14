@@ -195,4 +195,6 @@ gsub("/", "", new_df$dias)
 
 ## modificando valores
 
-Asimsimo, al vaciar los datos físicos en un data set no siempre se coloca el valor real de cad elemnto y se realiza un resumen de la información. Por ejemplo, al colocar el sexo en un data set en lugar de colocar "hombre", "mujer" se coloca 1 y 0
+Asimsimo, al vaciar los datos físicos en un data set no siempre se coloca el valor real de cad elemnto y se realiza un resumen de la información. Por ejemplo, al colocar el sexo en un data set en lugar de colocar "hombre", "mujer" se coloca 1 y 0. Para modificar este valor se utiliza la función revalue de la paquetería plyr.
+
+
