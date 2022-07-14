@@ -71,6 +71,6 @@ which(is.na(not_a))
 which(is.na(vect_na))
 ```
 
-
+Eliminarlos es fácil, esto se puede realizar a partir de la función 
 
 
