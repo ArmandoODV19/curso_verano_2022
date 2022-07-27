@@ -26,8 +26,27 @@ help(mean)
 ?mean
 ```
 
+# Condiciones
 
 ## if statment
+
+Antes de comenzar con las funciones, recordaremos algunas condiciones.
+
+```{r mayor, eval=FALSE}
+2 > 5
+10 > 2
+5 < 4
+8 < 20
+5 == 4
+5 == 2+3
+10 >= 10
+8 <= 8
+TRUE + TRUE
+1 == TRUE
+FALSE + FALSE
+0 == FALSE
+TRUE > FALSE
+```
 
 
 
