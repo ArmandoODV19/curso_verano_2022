@@ -19,4 +19,15 @@ Para conocer los argumentos de cada función se utiliza la función args(). A co
 args(mean)
 ```
 
+Para obtener la documentación de cada función se utiliza la función help() o el signo de interogación. En este apartado se enecuentra una descripción detallada de cada función, la definición de cada argumento y algunos ejemplos.
+
+```{r ayuda, eval=FALSE}
+help(mean)
+?mean
+```
+
+
+
+
+
 
