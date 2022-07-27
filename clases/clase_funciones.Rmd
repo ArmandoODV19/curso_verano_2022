@@ -85,4 +85,4 @@ if(d < 0){
 }
 ```
 
-Cuando d es un numero positivo y no se cumple la condición, la acción no se efectúa.
+Cuando d es un numero positivo y no se cumple la condición, la acción no se efectúa. Para agregar dos salidas se agrega else{}. A 
