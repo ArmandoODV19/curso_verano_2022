@@ -266,3 +266,21 @@ funcion_condicion(8)
 funcion_condicion(-5)
 ```
 
+De hecho, se puede realizar una función y condicionar la acción a partir de una variable definida. El siguiente ejemplo obtine el volumen de un prisma rectangular en cm cubicos. No obstante, si nuestras unidades iniciales se encuentran en pulgadas no es necesario convertirlas a cm, ya que nuestra función hace la conversión.
+
+```{r funcion8, eval=FALSE}
+vol <- function(largo, ancho, altura, unidad=c("cm", "pg")){
+  if(unidad == "cm"){
+    area <- largo * ancho * altura
+    return(area)
+  } else{
+    area <- largo/2.5 * ancho/2.5 * altura/2.5
+    return(area)
+  }
+}
+
+vol(largo = 10, ancho = 8, altura = 5, unidad = "cm")
+
+vol(largo = 10, ancho = 8, altura = 5, unidad = "pg")
+```
+
