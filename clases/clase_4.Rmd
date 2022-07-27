@@ -371,7 +371,7 @@ graficando_ando(x = "versicolor", y = "salmon")
 graficando_ando(x = "virginica", y = "dodgerblue")
 ```
 
-*TAREA:* 
+**TAREA:** 
 
 1. Realiza una función para calcular el índice de masa corporal
 
