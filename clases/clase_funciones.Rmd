@@ -286,4 +286,55 @@ vol(largo = 10, ancho = 8, altura = 5, unidad = "pg")
 
 **Nota:** de esta forma puedes realizar funciones para realizar diferentes calculos acorde a edad, genero o zona geografica.
 
+
 ## Funciones, dplyr y ggplot
+
+Dentro de la funcion puedes colocar cualquier línea de código. Y utilizar funciones ya establecidas, como los verbos de dplyr y ggplot.
+
+A continuación, realizaremos una función para filtrar los tipos de iris del df *iris*.
+
+```{r funcion9, eval=FALSE}
+filtrando <- function(x){
+  iris %>% 
+    filter(Species == x)
+}
+
+
+filtrando(x = "setosa")
+filtrando(x = "versicolor")
+filtrando(x = "virginica")
+```
+
+De hecho, el resultado puede ser un gráfico. En este ejemplo realizaremos una función para filtrar los datos por tipo de iris, y posteriormente hacer un gráfico de puntos con información de *Sepal.Length* en el eje equis y Petal.Length en el eje ye. Cada punto tendrá un tamaño de 3 y color rojo 
+
+```{r funcion10, eval=FALSE}
+funcion_grafico <- function(x){
+  iris %>% 
+    filter(Species == x) %>% 
+    ggplot(aes(Sepal.Length, Petal.Length)) +
+  geom_point(size = 3, color = "red")
+}
+
+
+funcion_grafico(x = "setosa")
+funcion_grafico(x = "virginica")
+funcion_grafico(x = "versicolor")
+```
+
+Y cada elemento del codigo anterior puede ser modificado con un argumento. Por ejemplo, agregaremos un argumento para el color de los puntos.
+
+```{r funcion11, eval=FALSE}
+graficando_ando <- function(x,y){
+  iris %>% 
+    filter(Species == x) %>% 
+    ggplot(aes(Sepal.Length, Petal.Length)) +
+  geom_point(size = 3, color = y)
+}
+
+graficando_ando(x = "setosa", y = "forestgreen")
+graficando_ando(x = "versicolor", y = "salmon")
+graficando_ando(x = "virginica", y = "dodgerblue")
+```
+
+
+
