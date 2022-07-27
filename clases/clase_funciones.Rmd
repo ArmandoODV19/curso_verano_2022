@@ -161,4 +161,13 @@ if(d < 0){
 }
 ```
 
+## Mis primera funciones
+
+Es probable que ya exista una función para el problema que tengas. No obstante, ¿cómo puedo realizar una función personalizada?. En este aspecto, puedes crear tu propia función, esto a partir de la función function(). Para esto checaremos el esqueleto básico de una función.
+
+```{r funcion, eval=FALSE}
+nombre_funcion <- function(arg1, arg2, argn){
+  cuerpo de la funcion
+}
+```
 
