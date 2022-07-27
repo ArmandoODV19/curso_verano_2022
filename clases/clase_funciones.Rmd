@@ -120,7 +120,7 @@ if(d < 0){
 
 Este error se presenta debido a que 0 no es un numero positivo. Solo se sigue la idea del código. Obtenemos como resultado "d es un numero positivo" al no cumplir con la condición. No obstante Podemos agregar una segunda condición en la función. Esto mediante else if()
 
-*NOTA:* else if() se escribe separado con espacio.
+**NOTA:** else if() se escribe separado con espacio.
 
 ```{r if4, eval=FALSE}
 if(d < 0){
@@ -246,4 +246,23 @@ cuarta_funcion <- function(x){
 cuarta_funcion(5)
 ```
 
+
+Asismismo, podemos agregar condiciones como *if* y *else* dentro de una funcion y definir la acción que se llevará a cabo dependiendo de los elementos utilizados.
+
+En el siguiente ejemplo realizará dos acciones diferentes a partir del valor de x. Si x es un numero negativo lo multiplicará por si mismo, guardará el resultado en la variable resultado y después le sumará 5 unidades al objeto resultado. Si x es un  numero positivo solamento lo dividirá entre 2.
+
+```{r funcion7, eval=FALSE}
+funcion_condicion <- function(x){
+  if(x < 0){
+    resultado <- x *x
+    resultado + 5
+  } else{
+    resultado <- x / 2
+    print(resultado)
+  }
+}
+
+funcion_condicion(8)
+funcion_condicion(-5)
+```
 
