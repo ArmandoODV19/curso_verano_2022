@@ -121,5 +121,42 @@ if(d < 0){
 
 Este error se presenta debido a que 0 no es un numero positivo. Solo se sigue la idea del código. Obtenemos como resultado "d es un numero positivo" al no cumplir con la condición. No obstante Podemos agregar una segunda condición en la función. Esto mediante else_if()
 
+```{r if4, eval=FALSE}
+if(d < 0){
+  print("d es un numero negativo")
+} else if(d == 0){
+  print("d es igual a cero")
+} else{
+  print("d es un numero positivo")
+}
+
+
+d <- -4
+if(d < 0){
+  print("d es un numero negativo")
+} else if(d == 0){
+  print("d es igual a cero")
+} else{
+  print("d es un numero positivo")
+}
+
+d <- 5
+if(d < 0){
+  print("d es un numero negativo")
+} else if(d == 0){
+  print("d es igual a cero")
+} else{
+  print("d es un numero positivo")
+}
+
+d <- 0
+if(d < 0){
+  print("d es un numero negativo")
+} else if(d == 0){
+  print("d es igual a cero")
+} else{
+  print("d es un numero positivo")
+}
+```
 
 
