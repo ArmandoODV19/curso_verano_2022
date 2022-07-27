@@ -119,7 +119,9 @@ if(d < 0){
 }
 ```
 
-Este error se presenta debido a que 0 no es un numero positivo. Solo se sigue la idea del código. Obtenemos como resultado "d es un numero positivo" al no cumplir con la condición. No obstante Podemos agregar una segunda condición en la función. Esto mediante else_if()
+Este error se presenta debido a que 0 no es un numero positivo. Solo se sigue la idea del código. Obtenemos como resultado "d es un numero positivo" al no cumplir con la condición. No obstante Podemos agregar una segunda condición en la función. Esto mediante else if()
+
+*NOTA:* else if() se escribe separado con espacio.
 
 ```{r if4, eval=FALSE}
 if(d < 0){
