@@ -85,4 +85,41 @@ if(d < 0){
 }
 ```
 
-Cuando d es un numero positivo y no se cumple la condición, la acción no se efectúa. Para agregar dos salidas se agrega else{}. A 
+Cuando d es un numero positivo y no se cumple la condición, la acción no se efectúa. Para agregar dos salidas se agrega else{}. 
+
+```{r if3, eval=FALSE}
+d <- 5
+if(d < 0){
+  print("d es un numero negativo")
+} else{
+  print("d es un numero positivo")
+}
+
+d <- -4
+if(d < 0){
+  print("d es un numero negativo")
+} else{
+  print("d es un numero positivo")
+}
+
+d <- 12
+if(d < 0){
+  print("d es un numero negativo")
+} else{
+  print("d es un numero positivo")
+}
+
+
+# error en la salida
+d <- 0
+if(d < 0){
+  print("d es un numero negativo")
+} else{
+  print("d es un numero positivo")
+}
+```
+
+Este error se presenta debido a que 0 no es un numero positivo. Solo se sigue la idea del código. Obtenemos como resultado "d es un numero positivo" al no cumplir con la condición. No obstante Podemos agregar una segunda condición en la función. Esto mediante else_if()
+
+
+
