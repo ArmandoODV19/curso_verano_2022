@@ -185,4 +185,13 @@ mi_primer_funcion <- function(x){
 mi_primer_funcion(x = 4)
 ```
 
+En esta función, cada vez que le asignamos un valor al argumento x, a este se le sumarán 3 unidades. Por lo que podemos utilizarla con el número que queramos.
 
+```{r funcion3, eval=FALSE}
+mi_primer_funcion(5)
+
+mi_primer_funcion(15)
+
+mi_primer_funcion("a")
+
+```
