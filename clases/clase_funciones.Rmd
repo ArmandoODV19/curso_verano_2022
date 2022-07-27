@@ -11,3 +11,6 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Funciones
 
+Las funciones son elementos que nos permiten realizar acciones dentro del lenguaje de R. Cada función contiene argumentos, que le permite a la misma ejecutar cada acción. A su vez, un conjunto de funciones se almacena en librerias.
+
+Para conocer los argumentos de cada función se utiliza la función args(). A continuación observaremos los argumentos de la función mean().
