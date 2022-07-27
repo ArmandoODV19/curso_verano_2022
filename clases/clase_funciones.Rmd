@@ -284,3 +284,5 @@ vol(largo = 10, ancho = 8, altura = 5, unidad = "cm")
 vol(largo = 10, ancho = 8, altura = 5, unidad = "pg")
 ```
 
+**Nota:** de esta forma puedes realizar funciones para realizar diferentes calculos acorde a edad, genero o zona geografica.
+
