@@ -354,5 +354,12 @@ iris %>%
 ```
 
 
+3. La formula de Benedict Harris calcula la tasa metabólica basal. No obstante, la fórmula varia acorde al sexo de la persona.
 
+hombres 66+(13.7 * peso) + (5 * altura) - (6.3 * edad)
+
+mujeres 655+(9.6 * peso) + (1.7 * altura) - (14.7 * edad)
+
+
+Realiza una función para calcular la tasa metabólica basal a partir de la fórmula de Benedict Harris
 
