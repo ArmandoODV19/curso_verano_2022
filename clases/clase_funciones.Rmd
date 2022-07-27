@@ -48,7 +48,40 @@ FALSE + FALSE
 TRUE > FALSE
 ```
 
-La función if() permite realizar una acción si la condición se cumple.
+La función if() permite realizar una acción si la condición se cumple. Para esto checaremos el esqueleto de if().
 
+```{r ifesqueleto, eval=FALSE}
+if(condicion){
+  expr
+}
+```
+
+Dentro de los paréntesis se coloca la condición y dentro de las llaves la acción a realizar.
+Vamos a determinar si la variable d es negativa.
+
+```{r if2, eval=FALSE}
+d <- -2
+if(d < 0){
+  print("d es un numero negativo")
+}
+
+# De esta forma podemos cambiar el valor de d y utilizar la funcion if
+d <- -5
+if(d < 0){
+  print("d es un numero negativo")
+}
+
+
+d <- -10
+if(d < 0){
+  print("d es un numero negativo")
+}
+
+
+d <- 5
+if(d < 0){
+  print("d es un numero negativo")
+}
+```
 
 
