@@ -171,3 +171,18 @@ nombre_funcion <- function(arg1, arg2, argn){
 }
 ```
 
+El nombre de la función como cualquier objeto de R debe seguir ciertas reglas. No debe ser un número aislado, no debe coincidir con el nombre de una función ya establecida, ni tener espacios.
+
+El número y nombre de cada argumento es libre, siempre y cuando se respeten las reglas de escritura.
+
+La primer función que generaremos se denominará mi primer función y tendra el objetivo de tomar cualquier numero y sumarle 3 unidades.
+
+```{r funcion2, eval=FALSE}
+mi_primer_funcion <- function(x){
+  x + 3
+}
+
+mi_primer_funcion(x = 4)
+```
+
+
