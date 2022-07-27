@@ -251,7 +251,7 @@ El nombre de la función como cualquier objeto de R debe seguir ciertas reglas. 
 
 El número y nombre de cada argumento es libre, siempre y cuando se respeten las reglas de escritura.
 
-La primer función que generaremos se denominará mi primer función y tendra el objetivo de tomar cualquier numero y sumarle 3.
+La primer función que generaremos se denominará mi primer función y tendra el objetivo de tomar cualquier numero y sumarle 3 unidades.
 
 ```{r funcion2, eval=FALSE}
 mi_primer_funcion <- function(x){
