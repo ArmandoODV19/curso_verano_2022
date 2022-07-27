@@ -48,7 +48,7 @@ FALSE + FALSE
 TRUE > FALSE
 ```
 
-La función if() permite realizar una acción si la condición se cumple
+La función if() permite realizar una acción si la condición se cumple.
 
 
 
