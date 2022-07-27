@@ -215,7 +215,19 @@ mi_segunda_funcion(x = 20)
 mi_segunda_funcion(x = 5, y = 30)
 ```
 
+En mi_segunda_funcion() tenemos un argumento definido, el argumento "y". Y un argumento no definido, el argumento "x"
 
+
+Dentro de las funciones podemos generar objetos para realizar una acción. Estos objetos no se guardarán en el ambiente, solo pertenecerán al esqueleto de la función. En el siguiente ejemplo generaremos una función con el argumento "x". Dentro de la función se generará un objeto denominado resultado con la suma de x + 4 . Por último agregaremos una línea de código con 20+ resultado.
+
+```{r funcion5, eval=FALSE}
+mi_tercera_funcion <- function(x){
+  resultado <- x + 4
+  20 + resultado
+}
+
+mi_tercera_funcion(5)
+```
 
 
 
